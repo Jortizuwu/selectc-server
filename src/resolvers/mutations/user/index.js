@@ -51,7 +51,7 @@ const userMutations = {
       const token = generateJWT(userAll)
 
       return {
-        userAll,
+        user: userAll,
         code: 200,
         success: true,
         message: 'user created',
