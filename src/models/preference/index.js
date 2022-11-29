@@ -1,22 +1,21 @@
 const { DataTypes } = require('sequelize')
 const { dbconfig } = require('../../db')
 
-const Role = dbconfig.define(
-  'Role',
+const preference = dbconfig.define(
+  'Preference',
   {
-    roleID: {
+    preferenceID: {
       type: DataTypes.UUID,
       allowNull: false,
       primaryKey: true
     },
     name: {
-      type: DataTypes.STRING(50),
-      allowNull: false,
-      unique: true
+      type: DataTypes.STRING,
+      allowNull: false
     }
   },
   {
-    tableName: 'role'
+    tableName: 'preference'
   }
 )
-module.exports = Role
+module.exports = preference

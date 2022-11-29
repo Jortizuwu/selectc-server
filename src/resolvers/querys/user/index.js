@@ -15,7 +15,6 @@ const userQuerys = {
           }
         ]
       })
-
       return user
     } catch (error) {
       return error

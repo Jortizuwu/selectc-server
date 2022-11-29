@@ -20,6 +20,8 @@ const typeDefs = gql`
     income: Int
     Status: Status
     Role: Role
+    Preferences: [Preference]
+    Activities: [Activity]
   }
 
   type Role {
@@ -29,11 +31,40 @@ const typeDefs = gql`
     updatedAt: String
   }
 
+  type Preference {
+    preferenceID: ID
+    name: String
+    createdAt: String
+    updatedAt: String
+  }
+
+  type Activity {
+    activityID: ID
+    name: String
+    user_has_activity: User_has_activity
+    createdAt: String
+    updatedAt: String
+  }
+
+
   type Status {
     statusID: ID
     statusCode: String
     createdAt: String
     updatedAt: String
+  }
+
+  type User_has_activity {
+    userValue: Int
+    activityID: ID
+    uid: ID
+    createdAt: String
+    updatedAt: String
+  }
+
+  input ArrActivities {
+    name: String
+    userValue: Int
   }
 
   # enums
@@ -69,6 +100,20 @@ const typeDefs = gql`
     status: Status
   }
 
+  type PreferenceResponse implements MutationResponse {
+    code: Int!
+    success: Boolean!
+    message: String
+    preference: Preference
+  }
+
+  type ActivityResponse implements MutationResponse {
+    code: Int!
+    success: Boolean!
+    message: String
+    activity: Activity
+  }
+
   # QUERY
   type Query {
     # user
@@ -91,7 +136,6 @@ const typeDefs = gql`
     ): UserResponse
 
     updateUser(
-      uid: ID
       name: String
       lastName: String
       email: String
@@ -111,9 +155,22 @@ const typeDefs = gql`
     #status
     createStatus(statusCode: AllStatus!): StatusResponse
 
+    #preference
+    createPreference(name: String!): PreferenceResponse
+
+    #activity
+    createActivity(name: String!): ActivityResponse
+
+    #user has preference
+    addPreferenceToUser(arrPreferences: [String]): PreferenceResponse
+    deletePreferenceToUser: PreferenceResponse
+
+    #user has preference
+    addActivityToUser(arrActivities: [ArrActivities]): ActivityResponse
+    deleteActivityToUser: ActivityResponse
+
     # auht
     loginWhitEmailAndPassword(email: String!, password: String!): UserResponse
-
     loginWhitToken(token: String!): UserResponse
   }
 `

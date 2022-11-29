@@ -16,7 +16,6 @@ const { findStatusByCode } = require('../../../helpers/status')
 const userMutations = {
   createUser: async (data) => {
     try {
-      console.log(data)
       const role = await findRoleByName(data.RoleName)
       if (!role?.roleID) throw new UserInputError('opps!! the role is`n valid!')
 
@@ -47,7 +46,7 @@ const userMutations = {
         })
       }
 
-      const { password, ...userAll } = await findUserById(user.uid)
+      const userAll = await findUserById(user.uid)
       const token = generateJWT(userAll)
 
       return {
@@ -61,24 +60,28 @@ const userMutations = {
       return error
     }
   },
-  updateUser: async (data) => {
+  updateUser: async (data, context) => {
     try {
       let password = null
-      const user = await findUserById(data.uid)
+      const user = await findUserById(context.currentUser.uid)
 
       if (data.newPassword && data.oldPassword) {
         await validatePassword(data.oldPassword, user.password)
         password = bcrypt.hashSync(data.newPassword, bcrypt.genSaltSync(10))
       }
 
-      const { uid, ...rest } = data
-      await userModel.update(password ? { ...rest, password } : rest, {
-        where: { uid }
+      await userModel.update(password ? { ...data, password } : data, {
+        where: { uid: context.currentUser.uid },
+        returning: true,
+        plain: true
       })
-
+      const userUpdate = await findUserById(context.currentUser.uid)
+      const token = generateJWT(userUpdate)
       return {
         code: 200,
         success: true,
+        user: userUpdate,
+        token,
         message: 'user update'
       }
     } catch (error) {

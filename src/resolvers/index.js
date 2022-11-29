@@ -2,7 +2,11 @@ const {
   roleMutations,
   userMutations,
   authMutations,
-  statusMutations
+  statusMutations,
+  preferenceMutations,
+  activityMutations,
+  userHasPreferenceMutations,
+  userHasActivityMutations
 } = require('./mutations')
 const { userQuerys, roleQuerys } = require('./querys')
 
@@ -29,6 +33,24 @@ const resolvers = {
     // status
     createStatus: (_, args, context) =>
       statusMutations.createStatus(args, context),
+
+    // preference
+    createPreference: (_, args) => preferenceMutations.createPreference(args),
+
+    // activity
+    createActivity: (_, args) => activityMutations.createActivity(args),
+
+    // user has preference
+    addPreferenceToUser: (_, args, context) =>
+      userHasPreferenceMutations.addPreferenceToUser(args, context),
+    deletePreferenceToUser: (_, __, context) =>
+      userHasPreferenceMutations.deletePreferenceToUser(context),
+
+    // user has activity
+    addActivityToUser: (_, args, context) =>
+      userHasActivityMutations.addActivityToUser(args, context),
+    deleteActivityToUser: (_, __, context) =>
+      userHasActivityMutations.deleteActivityToUser(context),
 
     // auth
     loginWhitEmailAndPassword: (_, args) =>

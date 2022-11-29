@@ -13,10 +13,12 @@ const validateJWT = (token) => {
   return user
 }
 
-const generateJWT = (data) =>
-  jwt.sign(data, PRIVATE_KEY, {
+const generateJWT = (data) => {
+  const { Surveys, Preferences, Activities, password, ...rest } = data
+  return jwt.sign(rest, PRIVATE_KEY, {
     expiresIn: '24h'
   })
+}
 
 const validateLogin = (user) => {
   if (!user) {
