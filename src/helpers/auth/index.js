@@ -16,7 +16,7 @@ const validateJWT = (token) => {
 const generateJWT = (data) => {
   const { Surveys, Preferences, Activities, password, ...rest } = data
   return jwt.sign(rest, PRIVATE_KEY, {
-    expiresIn: '24h'
+    expiresIn: '7d'
   })
 }
 
