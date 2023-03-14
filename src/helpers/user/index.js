@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs')
 const { GraphQLError } = require('graphql')
-const { userModel, activityModel } = require('../../models')
+const { userModel, activityModel, careerModel } = require('../../models')
 
 const validatePassword = async (old, curr) => {
   if (!(await bcrypt.compare(old, curr))) {
@@ -20,6 +20,14 @@ const findUserById = async (uid) => {
       },
       {
         model: activityModel,
+        include: [
+          {
+            all: true
+          }
+        ]
+      },
+      {
+        model: careerModel,
         include: [
           {
             all: true

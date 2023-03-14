@@ -22,6 +22,7 @@ const typeDefs = gql`
     Role: Role
     Preferences: [Preference]
     Activities: [Activity]
+    Careers: [Career]
   }
 
   type Role {
@@ -46,6 +47,16 @@ const typeDefs = gql`
     updatedAt: String
   }
 
+  type Career {
+    careerID: ID
+    name: String
+    user_has_career: User_has_career
+    description: String
+    matters: Int
+    duration: Int
+    createdAt: String
+    updatedAt: String
+  }
 
   type Status {
     statusID: ID
@@ -62,11 +73,23 @@ const typeDefs = gql`
     updatedAt: String
   }
 
+  type User_has_career {
+    coincidenceValue: Float
+    careerID: ID
+    uid: ID
+    createdAt: String
+    updatedAt: String
+  }
+
   input ArrActivities {
     name: String
     userValue: Int
   }
 
+  input ArrUserData {
+    name: String
+    value: Int
+  }
   # enums
   enum AllRoles {
     ADMIN
@@ -114,11 +137,22 @@ const typeDefs = gql`
     activity: Activity
   }
 
+  type CareerResponse implements MutationResponse {
+    code: Int!
+    success: Boolean!
+    message: String
+    career: Career
+  }
+
   # QUERY
   type Query {
     # user
     getUsers: [User]
     getUserById(uid: ID!): UserResponse
+
+    # user
+    getCareers: [Career]
+    getCareerById(id: ID!): CareerResponse
 
     # role
     getRoles: [Role]
@@ -161,13 +195,20 @@ const typeDefs = gql`
     #activity
     createActivity(name: String!): ActivityResponse
 
+    #career
+    createCareer(name: String!, description: String): CareerResponse
+
     #user has preference
     addPreferenceToUser(arrPreferences: [String]): PreferenceResponse
     deletePreferenceToUser: PreferenceResponse
 
-    #user has preference
+    #user has activities
     addActivityToUser(arrActivities: [ArrActivities]): ActivityResponse
     deleteActivityToUser: ActivityResponse
+
+    #user has career
+    addCareerToUser(data: [ArrUserData]): CareerResponse
+    deleteCareerToUser: CareerResponse
 
     # auht
     loginWhitEmailAndPassword(email: String!, password: String!): UserResponse

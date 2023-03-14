@@ -1,0 +1,46 @@
+    
+===========preferencias============
+      "analisis": 1,
+      "enseñanza": 1,
+      "construccion": 1,
+      "aire libre": 0,
+      "naturaleza": 1,
+      "oficina": 0,
+      "economía": 0,
+      "control": 1,
+      "musica": 0,
+      "teatro": 1,
+      "mecánica": 1,
+      "comunicacion": 0,
+      "monotonia": 1,
+      "negocios": 1,
+      "electronica": 1,
+      "ciencia": 0,
+      "administracion": 1,
+      "colaborador": 0,
+======Posible carrera=================
+    'Bacteriología' -
+    'Tecnología en farmacia' -
+    'Administración en Salud' -
+    'Biología' -
+    'Derecho' -
+    'Estadística' -
+    'Física' -
+    'Geografía' -
+    'Ingeniería Agronómica' -
+    'Ingeniería Ambiental' -
+    'Ingeniería de Sistemas' -
+    'Ingeniería Industrial' -
+    'Ingeniería Mecánica' -
+    'Licenciatura en ciencias naturales y educación ambiental ' -
+    'Licenciatura en ciencias sociales ' -
+    'Licenciatura en lenguas extranjeras con énfasis en inglés' -
+    'Licenciatura en lengua castellana' -
+    'Licenciatura en música' -
+    'Licenciatura en educación física recreación y deporte' -
+    'Licenciatura en educación infantil' -
+    'Licenciatura en informática' -
+    'Matemáticas' -
+    'Enfermería' - 
+    'Admón. en finanzas y negocios internacionales' -
+    'Química' - 

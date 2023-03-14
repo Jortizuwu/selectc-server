@@ -6,15 +6,21 @@ const {
   preferenceMutations,
   activityMutations,
   userHasPreferenceMutations,
-  userHasActivityMutations
+  userHasActivityMutations,
+  careerMutations,
+  userHasCareerMutations
 } = require('./mutations')
-const { userQuerys, roleQuerys } = require('./querys')
+const { userQuerys, roleQuerys, careerQuerys } = require('./querys')
 
 const resolvers = {
   Query: {
     // user
     getUsers: (_, __, context) => userQuerys.getUsers(context),
     getUserById: (_, args) => userQuerys.getUserById(args),
+
+    // career
+    getCareers: (_, __, context) => careerQuerys.getCareers(context),
+    getCareerById: (_, args) => careerQuerys.getCareerById(args),
 
     // role
     getRoles: (_, __, context) => roleQuerys.getRoles(context)
@@ -40,6 +46,9 @@ const resolvers = {
     // activity
     createActivity: (_, args) => activityMutations.createActivity(args),
 
+    // activity
+    createCareer: (_, args) => careerMutations.createCareer(args),
+
     // user has preference
     addPreferenceToUser: (_, args, context) =>
       userHasPreferenceMutations.addPreferenceToUser(args, context),
@@ -51,6 +60,12 @@ const resolvers = {
       userHasActivityMutations.addActivityToUser(args, context),
     deleteActivityToUser: (_, __, context) =>
       userHasActivityMutations.deleteActivityToUser(context),
+
+    // user has career
+    addCareerToUser: (_, args, context) =>
+      userHasCareerMutations.addCareerToUser(args, context),
+    deleteCareerToUser: (_, __, context) =>
+      userHasCareerMutations.deleteCareerToUser(context),
 
     // auth
     loginWhitEmailAndPassword: (_, args) =>
