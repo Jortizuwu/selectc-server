@@ -13,22 +13,25 @@ const data = [
   {
     input: {
       analisis: 1,
-      oficina: 1,
-      economía: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
       control: 1,
-      comunicacion: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
       negocios: 1,
+      electronica: 1,
       administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 1,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 3,
-      'Medicina y Ciencias de la Salud': 2,
-      'Profesiones Humanísticas y Sociales': 3,
-      'Actividades Artísticas': 2,
+      'Defensa y Seguridad': 7,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 5,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 9,
       'Profesiones Administrativas y Contables': 9,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Admón. en finanzas y negocios internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
   },
   {
     input: {
@@ -47,7 +50,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en música': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 },
   },
   {
     input: {
@@ -111,7 +114,7 @@ const data = [
       'Profesiones Administrativas y Contables': 7,
       'Ingeniería e Informática': 5,
     },
-    output: { 'Tecnología en farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 },
   },
   {
     input: {
@@ -131,7 +134,7 @@ const data = [
       'Profesiones Administrativas y Contables': 1,
       'Ingeniería e Informática': 1,
     },
-    output: { Bacteriología: 1 },
+    output: { Bacteriologia: 1 },
   },
   {
     input: {
@@ -344,7 +347,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -366,7 +369,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -385,7 +388,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -406,526 +409,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      'aire libre': 1,
-      naturaleza: 1,
-      control: 1,
-      comunicacion: 1,
-      ciencia: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 3,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 9,
-      'Medicina y Ciencias de la Salud': 7,
-      'Profesiones Humanísticas y Sociales': 5,
-      'Actividades Artísticas': 5,
-      'Profesiones Administrativas y Contables': 3,
-      'Ingeniería e Informática': 3,
-    },
-    output: { Biología: 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      control: 1,
-      monotonia: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 3,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
-      'Medicina y Ciencias de la Salud': 8,
-      'Profesiones Humanísticas y Sociales': 5,
-      'Actividades Artísticas': 3,
-      'Profesiones Administrativas y Contables': 5,
-      'Ingeniería e Informática': 2,
-    },
-    output: { 'Licenciatura en educación infantil': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      construccion: 1,
-      oficina: 1,
-      control: 1,
-      comunicacion: 1,
-      ciencia: 1,
-      'Defensa y Seguridad': 2,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 3,
-      'Medicina y Ciencias de la Salud': 4,
-      'Profesiones Humanísticas y Sociales': 4,
-      'Actividades Artísticas': 1,
-      'Profesiones Administrativas y Contables': 3,
-      'Ingeniería e Informática': 8,
-    },
-    output: { 'Licenciatura en informática': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      oficina: 1,
-      economía: 1,
-      control: 1,
-      comunicacion: 1,
-      ciencia: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 3,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 1,
-      'Medicina y Ciencias de la Salud': 3,
-      'Profesiones Humanísticas y Sociales': 7,
-      'Actividades Artísticas': 3,
-      'Profesiones Administrativas y Contables': 5,
-      'Ingeniería e Informática': 7,
-    },
-    output: { Matemáticas: 1 },
-  },
-  {
-    input: {
-      enseñanza: 1,
-      oficina: 1,
-      control: 1,
-      mecánica: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      negocios: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 2,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
-      'Medicina y Ciencias de la Salud': 9,
-      'Profesiones Humanísticas y Sociales': 3,
-      'Actividades Artísticas': 2,
-      'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
-    },
-    output: { Enfermería: 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      naturaleza: 1,
-      comunicacion: 1,
-      ciencia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 3,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 9,
-      'Medicina y Ciencias de la Salud': 7,
-      'Profesiones Humanísticas y Sociales': 5,
-      'Actividades Artísticas': 5,
-      'Profesiones Administrativas y Contables': 3,
-      'Ingeniería e Informática': 3,
-    },
-    output: { 'Química ': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      construccion: 1,
-      naturaleza: 1,
-      control: 1,
-      teatro: 1,
-      mecánica: 1,
-      monotonia: 1,
-      negocios: 1,
-      electronica: 1,
-      administracion: 1,
-      'Defensa y Seguridad': 7,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
-      'Medicina y Ciencias de la Salud': 5,
-      'Profesiones Humanísticas y Sociales': 6,
-      'Actividades Artísticas': 9,
-      'Profesiones Administrativas y Contables': 9,
-      'Ingeniería e Informática': 3,
-    },
-    output: { 'Admón. en finanzas y negocios internacionales': 1 },
-  },
-  {
-    input: {
-      'aire libre': 1,
-      oficina: 1,
-      economía: 1,
-      musica: 1,
-      comunicacion: 1,
-      ciencia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 1,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
-      'Medicina y Ciencias de la Salud': 2,
-      'Profesiones Humanísticas y Sociales': 6,
-      'Actividades Artísticas': 9,
-      'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
-    },
-    output: { 'Licenciatura en música': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      monotonia: 1,
-      'aire libre': 1,
-      control: 1,
-      comunicacion: 1,
-      administracion: 1,
-      colaborador: 1,
-      economía: 1,
-      'Defensa y Seguridad': 9,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
-      'Medicina y Ciencias de la Salud': 1,
-      'Profesiones Humanísticas y Sociales': 0,
-      'Actividades Artísticas': 2,
-      'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 1,
-    },
-    output: { Derecho: 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      oficina: 1,
-      economía: 1,
-      control: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      negocios: 1,
-      ciencia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 1,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
-      'Medicina y Ciencias de la Salud': 3,
-      'Profesiones Humanísticas y Sociales': 4,
-      'Actividades Artísticas': 4,
-      'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
-    },
-    output: { Física: 1 },
-  },
-  {
-    input: {
-      'aire libre': 1,
-      naturaleza: 1,
-      oficina: 1,
-      control: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      ciencia: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 1,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 5,
-      'Medicina y Ciencias de la Salud': 9,
-      'Profesiones Humanísticas y Sociales': 2,
-      'Actividades Artísticas': 0,
-      'Profesiones Administrativas y Contables': 7,
-      'Ingeniería e Informática': 5,
-    },
-    output: { 'Tecnología en farmacia': 1 },
-  },
-  {
-    input: {
-      'aire libre': 1,
-      naturaleza: 1,
-      control: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      ciencia: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 0,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
-      'Medicina y Ciencias de la Salud': 8,
-      'Profesiones Humanísticas y Sociales': 4,
-      'Actividades Artísticas': 2,
-      'Profesiones Administrativas y Contables': 1,
-      'Ingeniería e Informática': 1,
-    },
-    output: { Bacteriología: 1 },
-  },
-  {
-    input: {
-      enseñanza: 1,
-      'aire libre': 1,
-      naturaleza: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      ciencia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 1,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 7,
-      'Medicina y Ciencias de la Salud': 5,
-      'Profesiones Humanísticas y Sociales': 9,
-      'Actividades Artísticas': 3,
-      'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
-    },
-    output: { Geografía: 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      construccion: 1,
-      'aire libre': 1,
-      naturaleza: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      ciencia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 2,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
-      'Medicina y Ciencias de la Salud': 6,
-      'Profesiones Humanísticas y Sociales': 2,
-      'Actividades Artísticas': 4,
-      'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 6,
-    },
-    output: { 'Ingeniería Agronómica': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      'aire libre': 1,
-      naturaleza: 1,
-      control: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      negocios: 1,
-      ciencia: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 1,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 9,
-      'Medicina y Ciencias de la Salud': 4,
-      'Profesiones Humanísticas y Sociales': 5,
-      'Actividades Artísticas': 0,
-      'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 7,
-    },
-    output: { 'Ingeniería Ambiental': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      oficina: 1,
-      economía: 1,
-      control: 1,
-      comunicacion: 1,
-      negocios: 1,
-      ciencia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 3,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 7,
-      'Medicina y Ciencias de la Salud': 2,
-      'Profesiones Humanísticas y Sociales': 8,
-      'Actividades Artísticas': 2,
-      'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 5,
-    },
-    output: { Estadística: 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      oficina: 1,
-      economía: 1,
-      control: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      negocios: 1,
-      ciencia: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 1,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
-      'Medicina y Ciencias de la Salud': 9,
-      'Profesiones Humanísticas y Sociales': 2,
-      'Actividades Artísticas': 2,
-      'Profesiones Administrativas y Contables': 7,
-      'Ingeniería e Informática': 4,
-    },
-    output: { 'Administración en Salud': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      construccion: 1,
-      oficina: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      negocios: 1,
-      electronica: 1,
-      ciencia: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 1,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
-      'Medicina y Ciencias de la Salud': 1,
-      'Profesiones Humanísticas y Sociales': 3,
-      'Actividades Artísticas': 2,
-      'Profesiones Administrativas y Contables': 5,
-      'Ingeniería e Informática': 9,
-    },
-    output: { 'Ingeniería de Sistemas': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      construccion: 1,
-      'aire libre': 1,
-      naturaleza: 1,
-      oficina: 1,
-      control: 1,
-      mecánica: 1,
-      comunicacion: 1,
-      administracion: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 2,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 5,
-      'Medicina y Ciencias de la Salud': 2,
-      'Profesiones Humanísticas y Sociales': 4,
-      'Actividades Artísticas': 1,
-      'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 8,
-    },
-    output: { 'Ingeniería Industrial': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      construccion: 1,
-      oficina: 1,
-      mecánica: 1,
-      monotonia: 1,
-      electronica: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 3,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
-      'Medicina y Ciencias de la Salud': 1,
-      'Profesiones Humanísticas y Sociales': 3,
-      'Actividades Artísticas': 1,
-      'Profesiones Administrativas y Contables': 7,
-      'Ingeniería e Informática': 8,
-    },
-    output: { 'Ingeniería Mecánica': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      naturaleza: 1,
-      control: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      ciencia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 2,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 9,
-      'Medicina y Ciencias de la Salud': 5,
-      'Profesiones Humanísticas y Sociales': 6,
-      'Actividades Artísticas': 5,
-      'Profesiones Administrativas y Contables': 3,
-      'Ingeniería e Informática': 2,
-    },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      naturaleza: 1,
-      economía: 1,
-      control: 1,
-      comunicacion: 1,
-      negocios: 1,
-      ciencia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 7,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
-      'Medicina y Ciencias de la Salud': 2,
-      'Profesiones Humanísticas y Sociales': 9,
-      'Actividades Artísticas': 4,
-      'Profesiones Administrativas y Contables': 3,
-      'Ingeniería e Informática': 2,
-    },
-    output: { 'Licenciatura en ciencias sociales': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      'aire libre': 1,
-      naturaleza: 1,
-      control: 1,
-      musica: 1,
-      teatro: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 3,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
-      'Medicina y Ciencias de la Salud': 2,
-      'Profesiones Humanísticas y Sociales': 7,
-      'Actividades Artísticas': 8,
-      'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 3,
-    },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
-  },
-  {
-    input: {
-      analisis: 1,
-      enseñanza: 1,
-      control: 1,
-      musica: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 2,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 5,
-      'Medicina y Ciencias de la Salud': 3,
-      'Profesiones Humanísticas y Sociales': 7,
-      'Actividades Artísticas': 7,
-      'Profesiones Administrativas y Contables': 3,
-      'Ingeniería e Informática': 1,
-    },
-    output: { 'Licenciatura en lengua castellana': 1 },
-  },
-  {
-    input: {
-      enseñanza: 1,
-      'aire libre': 1,
-      naturaleza: 1,
-      control: 1,
-      musica: 1,
-      teatro: 1,
-      comunicacion: 1,
-      monotonia: 1,
-      colaborador: 1,
-      'Defensa y Seguridad': 3,
-      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
-      'Medicina y Ciencias de la Salud': 4,
-      'Profesiones Humanísticas y Sociales': 7,
-      'Actividades Artísticas': 7,
-      'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
-    },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2153,7 +1637,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2174,7 +1658,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2195,7 +1679,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 4,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2216,7 +1700,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 5,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2237,7 +1721,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 5,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2258,7 +1742,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 4,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2279,7 +1763,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2300,7 +1784,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2321,7 +1805,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en educación física recreación y deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
   },
   {
     input: {
@@ -2340,7 +1824,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2359,7 +1843,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2378,7 +1862,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2397,7 +1881,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2416,7 +1900,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2435,7 +1919,7 @@ const data = [
       'Profesiones Administrativas y Contables': 1,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2454,7 +1938,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2473,7 +1957,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2492,7 +1976,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en lengua castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
   },
   {
     input: {
@@ -2514,7 +1998,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -2536,7 +2020,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -2558,7 +2042,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -2580,7 +2064,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -2602,7 +2086,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -2624,7 +2108,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -2646,7 +2130,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -2668,7 +2152,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en lenguas extranjeras con énfasis en inglés': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
   },
   {
     input: {
@@ -2689,7 +2173,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -2710,7 +2194,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -2731,7 +2215,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -2752,7 +2236,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -2773,7 +2257,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 1,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -2794,7 +2278,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -2815,7 +2299,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -2836,7 +2320,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -2857,7 +2341,7 @@ const data = [
       'Profesiones Administrativas y Contables': 3,
       'Ingeniería e Informática': 5,
     },
-    output: { 'Licenciatura en ciencias sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 },
   },
   {
     input: {
@@ -4529,7 +4013,7 @@ const data = [
       'Profesiones Administrativas y Contables': 1,
       'Ingeniería e Informática': 1,
     },
-    output: { Bacteriología: 1 },
+    output: { Bacteriologia: 1 },
   },
   {
     input: {
@@ -4549,7 +4033,7 @@ const data = [
       'Profesiones Administrativas y Contables': 1,
       'Ingeniería e Informática': 1,
     },
-    output: { Bacteriología: 1 },
+    output: { Bacteriologia: 1 },
   },
   {
     input: {
@@ -4569,7 +4053,7 @@ const data = [
       'Profesiones Administrativas y Contables': 1,
       'Ingeniería e Informática': 1,
     },
-    output: { Bacteriología: 1 },
+    output: { Bacteriologia: 1 },
   },
   {
     input: {
@@ -4589,7 +4073,7 @@ const data = [
       'Profesiones Administrativas y Contables': 1,
       'Ingeniería e Informática': 1,
     },
-    output: { Bacteriología: 1 },
+    output: { Bacteriologia: 1 },
   },
   {
     input: {
@@ -4609,7 +4093,7 @@ const data = [
       'Profesiones Administrativas y Contables': 1,
       'Ingeniería e Informática': 2,
     },
-    output: { Bacteriología: 1 },
+    output: { Bacteriologia: 1 },
   },
   {
     input: {
@@ -4630,7 +4114,7 @@ const data = [
       'Profesiones Administrativas y Contables': 7,
       'Ingeniería e Informática': 5,
     },
-    output: { 'Tecnología en farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 },
   },
   {
     input: {
@@ -4651,7 +4135,7 @@ const data = [
       'Profesiones Administrativas y Contables': 7,
       'Ingeniería e Informática': 5,
     },
-    output: { 'Tecnología en farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 },
   },
   {
     input: {
@@ -4672,7 +4156,7 @@ const data = [
       'Profesiones Administrativas y Contables': 7,
       'Ingeniería e Informática': 5,
     },
-    output: { 'Tecnología en farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 },
   },
   {
     input: {
@@ -4693,7 +4177,7 @@ const data = [
       'Profesiones Administrativas y Contables': 7,
       'Ingeniería e Informática': 5,
     },
-    output: { 'Tecnología en farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 },
   },
   {
     input: {
@@ -4714,7 +4198,7 @@ const data = [
       'Profesiones Administrativas y Contables': 7,
       'Ingeniería e Informática': 6,
     },
-    output: { 'Tecnología en farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 },
   },
   {
     input: {
@@ -4948,7 +4432,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en música': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 },
   },
   {
     input: {
@@ -4967,7 +4451,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en música': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 },
   },
   {
     input: {
@@ -4986,7 +4470,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en música': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 },
   },
   {
     input: {
@@ -5005,7 +4489,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Licenciatura en música': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 },
   },
   {
     input: {
@@ -5024,7 +4508,7 @@ const data = [
       'Profesiones Administrativas y Contables': 2,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Licenciatura en música': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 },
   },
   {
     input: {
@@ -5047,7 +4531,7 @@ const data = [
       'Profesiones Administrativas y Contables': 9,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Admón. en finanzas y negocios internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
   },
   {
     input: {
@@ -5070,7 +4554,7 @@ const data = [
       'Profesiones Administrativas y Contables': 9,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Admón. en finanzas y negocios internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
   },
   {
     input: {
@@ -5093,7 +4577,7 @@ const data = [
       'Profesiones Administrativas y Contables': 9,
       'Ingeniería e Informática': 3,
     },
-    output: { 'Admón. en finanzas y negocios internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
   },
   {
     input: {
@@ -5116,7 +4600,7 @@ const data = [
       'Profesiones Administrativas y Contables': 10,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Admón. en finanzas y negocios internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
   },
   {
     input: {
@@ -5139,7 +4623,7 @@ const data = [
       'Profesiones Administrativas y Contables': 10,
       'Ingeniería e Informática': 2,
     },
-    output: { 'Admón. en finanzas y negocios internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
   },
 ]
 
@@ -5162,8 +4646,8 @@ const userHasCareerMutations = {
       userData[element.name] = element.value
     })
     const prediction = neuralNetwork.run(userData)
-    console.log(prediction)
     const uwu = Object.entries(prediction)
+    console.log({ uwu })
     await Promise.all(
       uwu.map(async (val) => {
         const { careerID } = await findCareerByName(val[0])
