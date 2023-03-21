@@ -20,7 +20,7 @@
       "Profesiones Administrativas y Contables": 9,
       "Ingeniería e Informática": 3
     },
-    "output": { "Admón. en finanzas y negocios internacionales": 1 }
+    "output": { "Administracion en Finanzas y Negocios Internacionales": 1 }
   },
   {
     "input": {
@@ -39,7 +39,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en música": 1 }
+    "output": { "Licenciatura en Educacion Artistica": 1 }
   },
   {
     "input": {
@@ -103,7 +103,7 @@
       "Profesiones Administrativas y Contables": 7,
       "Ingeniería e Informática": 5
     },
-    "output": { "Tecnología en farmacia": 1 }
+    "output": { "Tecnologia en Regencia y Farmacia": 1 }
   },
   {
     "input": {
@@ -123,7 +123,7 @@
       "Profesiones Administrativas y Contables": 1,
       "Ingeniería e Informática": 1
     },
-    "output": { "Bacteriología": 1 }
+    "output": { "Bacteriologia": 1 }
   },
   {
     "input": {
@@ -315,7 +315,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -358,7 +358,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -377,7 +377,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   },
   {
     "input": {
@@ -398,7 +398,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1625,7 +1625,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1646,7 +1646,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1667,7 +1667,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 4
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1688,7 +1688,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 5
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1709,7 +1709,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 5
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1730,7 +1730,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 4
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1751,7 +1751,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1772,7 +1772,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1793,7 +1793,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en educación física recreación y deporte": 1 }
+    "output": { "Licenciatura Educacion Fisica, Recreacio y Deporte": 1 }
   },
   {
     "input": {
@@ -1812,7 +1812,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   }, 
   {
     "input": {
@@ -1831,7 +1831,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   }, 
   {
     "input": {
@@ -1850,7 +1850,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   }, 
   {
     "input": {
@@ -1869,7 +1869,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   }, 
   {
     "input": {
@@ -1888,7 +1888,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   }, 
   {
     "input": {
@@ -1907,7 +1907,7 @@
       "Profesiones Administrativas y Contables": 1,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   }, {
     "input": {
       "analisis": 1,
@@ -1925,7 +1925,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   },
   {
     "input": {
@@ -1944,7 +1944,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   }, 
   {
     "input": {
@@ -1963,7 +1963,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en lengua castellana": 1 }
+    "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
   },
   {
     "input": {
@@ -1985,7 +1985,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -2007,7 +2007,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -2029,7 +2029,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -2051,7 +2051,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -2073,7 +2073,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -2095,7 +2095,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -2117,7 +2117,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -2139,7 +2139,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en lenguas extranjeras con énfasis en inglés": 1 }
+    "output": { "Licenciatura en Lengua Extrangera con Enfasis en Ingles": 1 }
   },
   {
     "input": {
@@ -2348,7 +2348,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -2368,7 +2368,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -2388,7 +2388,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 1
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -2408,7 +2408,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -2428,7 +2428,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -2448,7 +2448,7 @@
       "Profesiones Administrativas y Contables": 3,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -2468,7 +2468,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -2488,7 +2488,7 @@
       "Profesiones Administrativas y Contables": 1,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -2508,7 +2508,7 @@
       "Profesiones Administrativas y Contables": 4,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en ciencias naturales y educación ambiental": 1 }
+    "output": { "Licenciatura en Ciencias Naturales y Educacion Ambiental": 1 }
   },
   {
     "input": {
@@ -4000,7 +4000,7 @@
       "Profesiones Administrativas y Contables": 1,
       "Ingeniería e Informática": 1
     },
-    "output": { "Bacteriología": 1 }
+    "output": { "Bacteriologia": 1 }
   },
   {
     "input": {
@@ -4020,7 +4020,7 @@
       "Profesiones Administrativas y Contables": 1,
       "Ingeniería e Informática": 1
     },
-    "output": { "Bacteriología": 1 }
+    "output": { "Bacteriologia": 1 }
   },
   {
     "input": {
@@ -4040,7 +4040,7 @@
       "Profesiones Administrativas y Contables": 1,
       "Ingeniería e Informática": 1
     },
-    "output": { "Bacteriología": 1 }
+    "output": { "Bacteriologia": 1 }
   },
   {
     "input": {
@@ -4060,7 +4060,7 @@
       "Profesiones Administrativas y Contables": 1,
       "Ingeniería e Informática": 1
     },
-    "output": { "Bacteriología": 1 }
+    "output": { "Bacteriologia": 1 }
   },
   {
     "input": {
@@ -4080,7 +4080,7 @@
       "Profesiones Administrativas y Contables": 1,
       "Ingeniería e Informática": 2
     },
-    "output": { "Bacteriología": 1 }
+    "output": { "Bacteriologia": 1 }
   },
   {
     "input": {
@@ -4101,7 +4101,7 @@
       "Profesiones Administrativas y Contables": 7,
       "Ingeniería e Informática": 5
     },
-    "output": { "Tecnología en farmacia": 1 }
+    "output": { "Tecnologia en Regencia y Farmacia": 1 }
   },
   {
     "input": {
@@ -4122,7 +4122,7 @@
       "Profesiones Administrativas y Contables": 7,
       "Ingeniería e Informática": 5
     },
-    "output": { "Tecnología en farmacia": 1 }
+    "output": { "Tecnologia en Regencia y Farmacia": 1 }
   },
   {
     "input": {
@@ -4143,7 +4143,7 @@
       "Profesiones Administrativas y Contables": 7,
       "Ingeniería e Informática": 5
     },
-    "output": { "Tecnología en farmacia": 1 }
+    "output": { "Tecnologia en Regencia y Farmacia": 1 }
   },
   {
     "input": {
@@ -4164,7 +4164,7 @@
       "Profesiones Administrativas y Contables": 7,
       "Ingeniería e Informática": 5
     },
-    "output": { "Tecnología en farmacia": 1 }
+    "output": { "Tecnologia en Regencia y Farmacia": 1 }
   },
   {
     "input": {
@@ -4185,7 +4185,7 @@
       "Profesiones Administrativas y Contables": 7,
       "Ingeniería e Informática": 6
     },
-    "output": { "Tecnología en farmacia": 1 }
+    "output": { "Tecnologia en Regencia y Farmacia": 1 }
   },
   {
     "input": {
@@ -4419,7 +4419,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en música": 1 }
+    "output": { "Licenciatura en Educacion Artistica": 1 }
   },
   {
     "input": {
@@ -4438,7 +4438,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en música": 1 }
+    "output": { "Licenciatura en Educacion Artistica": 1 }
   },
   {
     "input": {
@@ -4457,7 +4457,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en música": 1 }
+    "output": { "Licenciatura en Educacion Artistica": 1 }
   },
   {
     "input": {
@@ -4476,7 +4476,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 2
     },
-    "output": { "Licenciatura en música": 1 }
+    "output": { "Licenciatura en Educacion Artistica": 1 }
   },
   {
     "input": {
@@ -4495,7 +4495,7 @@
       "Profesiones Administrativas y Contables": 2,
       "Ingeniería e Informática": 3
     },
-    "output": { "Licenciatura en música": 1 }
+    "output": { "Licenciatura en Educacion Artistica": 1 }
   },
   {
     "input": {
@@ -4518,7 +4518,7 @@
       "Profesiones Administrativas y Contables": 9,
       "Ingeniería e Informática": 2
     },
-    "output": { "Admón. en finanzas y negocios internacionales": 1 }
+    "output": { "Administracion en Finanzas y Negocios Internacionales": 1 }
   },
   {
     "input": {
@@ -4541,7 +4541,7 @@
       "Profesiones Administrativas y Contables": 9,
       "Ingeniería e Informática": 3
     },
-    "output": { "Admón. en finanzas y negocios internacionales": 1 }
+    "output": { "Administracion en Finanzas y Negocios Internacionales": 1 }
   },
   {
     "input": {
@@ -4564,7 +4564,7 @@
       "Profesiones Administrativas y Contables": 9,
       "Ingeniería e Informática": 3
     },
-    "output": { "Admón. en finanzas y negocios internacionales": 1 }
+    "output": { "Administracion en Finanzas y Negocios Internacionales": 1 }
   },
   {
     "input": {
@@ -4587,7 +4587,7 @@
       "Profesiones Administrativas y Contables": 10,
       "Ingeniería e Informática": 2
     },
-    "output": { "Admón. en finanzas y negocios internacionales": 1 }
+    "output": { "Administracion en Finanzas y Negocios Internacionales": 1 }
   },
   {
     "input": {
@@ -4610,7 +4610,7 @@
       "Profesiones Administrativas y Contables": 10,
       "Ingeniería e Informática": 2
     },
-    "output": { "Admón. en finanzas y negocios internacionales": 1 }
+    "output": { "Administracion en Finanzas y Negocios Internacionales": 1 }
   }
   
 ]
