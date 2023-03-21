@@ -20,12 +20,12 @@ const statusMutations = {
         code: 200,
         success: true,
         message: 'status created',
-        status
+        status,
       }
     } catch (error) {
       return error
     }
-  }
+  },
 }
 
 module.exports = statusMutations

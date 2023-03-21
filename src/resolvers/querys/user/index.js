@@ -11,9 +11,9 @@ const userQuerys = {
       const user = await userModel.findAll({
         include: [
           {
-            all: true
-          }
-        ]
+            all: true,
+          },
+        ],
       })
       return user
     } catch (error) {
@@ -22,17 +22,18 @@ const userQuerys = {
   },
   getUserById: async (args) => {
     try {
+      // eslint-disable-next-line no-unused-vars
       const { password, ...user } = await findUserById(args.uid)
       return {
         user,
         code: 200,
         success: true,
-        message: 'user find success'
+        message: 'user find success',
       }
     } catch (error) {
       return error
     }
-  }
+  },
 }
 
 module.exports = userQuerys

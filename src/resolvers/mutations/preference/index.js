@@ -5,7 +5,7 @@ const preferenceMutations = {
   createPreference: async (data) => {
     const preference = await preferenceModel.create({
       ...data,
-      preferenceID: uuidv4()
+      preferenceID: uuidv4(),
     })
 
     if (!preference) throw new Error('opps!')
@@ -14,9 +14,9 @@ const preferenceMutations = {
       preference,
       code: 200,
       success: true,
-      message: 'preference created'
+      message: 'preference created',
     }
-  }
+  },
 }
 
 module.exports = preferenceMutations

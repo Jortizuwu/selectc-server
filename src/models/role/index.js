@@ -7,16 +7,16 @@ const Role = dbconfig.define(
     roleID: {
       type: DataTypes.UUID,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
     },
     name: {
       type: DataTypes.STRING(50),
       allowNull: false,
-      unique: true
-    }
+      unique: true,
+    },
   },
   {
-    tableName: 'role'
+    tableName: 'role',
   }
 )
 module.exports = Role

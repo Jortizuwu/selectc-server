@@ -6,11 +6,11 @@ const userHasActivity = dbconfig.define(
   {
     userValue: {
       type: DataTypes.INTEGER,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   },
   {
-    tableName: 'user_has_activity'
+    tableName: 'user_has_activity',
   }
 )
 module.exports = userHasActivity

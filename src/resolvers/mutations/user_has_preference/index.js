@@ -8,28 +8,28 @@ const userHasPreferenceMutations = {
         const { preferenceID } = await findPreferenceByName(val)
         await userHasPreferenceModel.create({
           uid: context.currentUser.uid,
-          preferenceID
+          preferenceID,
         })
       })
     )
     return {
       code: 200,
       success: true,
-      message: 'preferences add to user'
+      message: 'preferences add to user',
     }
   },
   deletePreferenceToUser: async (context) => {
     await userHasPreferenceModel.destroy({
       where: {
-        uid: context.currentUser.uid
-      }
+        uid: context.currentUser.uid,
+      },
     })
     return {
       code: 200,
       success: true,
-      message: 'preferences delete'
+      message: 'preferences delete',
     }
-  }
+  },
 }
 
 module.exports = userHasPreferenceMutations

@@ -5,7 +5,7 @@ const activityMutations = {
   createActivity: async (data) => {
     const activity = await activityModel.create({
       ...data,
-      activityID: uuidv4()
+      activityID: uuidv4(),
     })
 
     if (!activity) throw new Error('opps!')
@@ -14,9 +14,9 @@ const activityMutations = {
       activity,
       code: 200,
       success: true,
-      message: 'activity created'
+      message: 'activity created',
     }
-  }
+  },
 }
 
 module.exports = activityMutations

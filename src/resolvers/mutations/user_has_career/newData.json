@@ -641,7 +641,7 @@
       "Ingeniería e Informática": 5
     },
     "output": { "Química ": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -658,7 +658,7 @@
       "Ingeniería e Informática": 3
     },
     "output": { "Química ": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -678,7 +678,7 @@
     },
     "output": { "Química ": 1 }
   },
-   {
+  {
     "input": {
       "analisis": 1,
       "enseñanza": 1,
@@ -861,7 +861,8 @@
       "Ingeniería e Informática": 2
     },
     "output": { "Enfermería": 1 }
-  }, {
+  },
+  {
     "input": {
       "enseñanza": 1,
       "oficina": 1,
@@ -921,7 +922,7 @@
       "Ingeniería e Informática": 7
     },
     "output": { "Matemáticas": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -942,7 +943,7 @@
       "Ingeniería e Informática": 7
     },
     "output": { "Matemáticas": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -963,7 +964,7 @@
       "Ingeniería e Informática": 7
     },
     "output": { "Matemáticas": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -984,7 +985,7 @@
       "Ingeniería e Informática": 7
     },
     "output": { "Matemáticas": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1005,7 +1006,7 @@
       "Ingeniería e Informática": 7
     },
     "output": { "Matemáticas": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1026,7 +1027,7 @@
       "Ingeniería e Informática": 7
     },
     "output": { "Matemáticas": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1047,7 +1048,7 @@
     },
     "output": { "Matemáticas": 1 }
   },
-   {
+  {
     "input": {
       "analisis": 1,
       "enseñanza": 1,
@@ -1067,7 +1068,7 @@
       "Ingeniería e Informática": 7
     },
     "output": { "Matemáticas": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1813,7 +1814,7 @@
       "Ingeniería e Informática": 2
     },
     "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1832,7 +1833,7 @@
       "Ingeniería e Informática": 3
     },
     "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1851,7 +1852,7 @@
       "Ingeniería e Informática": 3
     },
     "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1870,7 +1871,7 @@
       "Ingeniería e Informática": 3
     },
     "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1889,7 +1890,7 @@
       "Ingeniería e Informática": 1
     },
     "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -1908,7 +1909,8 @@
       "Ingeniería e Informática": 1
     },
     "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
-  }, {
+  },
+  {
     "input": {
       "analisis": 1,
       "enseñanza": 1,
@@ -1945,7 +1947,7 @@
       "Ingeniería e Informática": 1
     },
     "output": { "Licenciatura en Literatura y Lengua Castellana": 1 }
-  }, 
+  },
   {
     "input": {
       "analisis": 1,
@@ -3513,7 +3515,7 @@
       "Ingeniería e Informática": 7
     },
     "output": { "Ingeniería Ambiental": 1 }
-  },  
+  },
   {
     "input": {
       "analisis": 1,
@@ -4612,5 +4614,4 @@
     },
     "output": { "Administracion en Finanzas y Negocios Internacionales": 1 }
   }
-  
 ]

@@ -6,11 +6,11 @@ const userHasCareer = dbconfig.define(
   {
     coincidenceValue: {
       type: DataTypes.DOUBLE,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   },
   {
-    tableName: 'user_has_career'
+    tableName: 'user_has_career',
   }
 )
 module.exports = userHasCareer

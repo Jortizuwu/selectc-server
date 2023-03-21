@@ -7,15 +7,15 @@ const preference = dbconfig.define(
     preferenceID: {
       type: DataTypes.UUID,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   },
   {
-    tableName: 'preference'
+    tableName: 'preference',
   }
 )
 module.exports = preference

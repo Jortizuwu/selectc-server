@@ -7,15 +7,15 @@ const activity = dbconfig.define(
     activityID: {
       type: DataTypes.UUID,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   },
   {
-    tableName: 'activity'
+    tableName: 'activity',
   }
 )
 module.exports = activity

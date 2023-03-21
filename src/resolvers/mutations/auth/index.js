@@ -13,21 +13,21 @@ const authMutations = {
           {
             model: statusModel,
             where: {
-              statusCode: 'ACTIVE'
-            }
+              statusCode: 'ACTIVE',
+            },
           },
           {
             model: roleModel,
-            attributes: ['name', 'roleID']
-          }
-        ]
+            attributes: ['name', 'roleID'],
+          },
+        ],
       })
 
       if (!user) throw new UserInputError('the user not found or inactive')
 
       const hash = cbcrypt.compareSync(data.password, user.password)
       if (!hash) throw new UserInputError('the password is not valid')
-
+      // eslint-disable-next-line no-unused-vars
       const { password, ...rest } = user.dataValues
 
       const token = generateJWT(rest)
@@ -37,7 +37,7 @@ const authMutations = {
         code: 200,
         success: true,
         message: `Nya hello ${user.email}`,
-        token
+        token,
       }
     } catch (error) {
       return error
@@ -50,12 +50,12 @@ const authMutations = {
       const user = await userModel.findByPk(value.uid, {
         include: [
           {
-            all: true
-          }
-        ]
+            all: true,
+          },
+        ],
       })
       if (!user) throw new UserInputError('the user not found')
-
+      // eslint-disable-next-line no-unused-vars
       const { password, ...rest } = user.dataValues
 
       const token = generateJWT(rest)
@@ -65,12 +65,12 @@ const authMutations = {
         code: 200,
         success: true,
         message: `Nya hello ${user.name}`,
-        token
+        token,
       }
     } catch (error) {
       return error
     }
-  }
+  },
 }
 
 module.exports = authMutations

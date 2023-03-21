@@ -7,7 +7,7 @@ const roleQuerys = {
     validateLogin(context.currentUser)
     onlyAdmin(context.currentUser)
     return await roleModel.findAll()
-  }
+  },
 }
 
 module.exports = roleQuerys

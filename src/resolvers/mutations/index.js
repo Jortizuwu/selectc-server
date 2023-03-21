@@ -19,5 +19,5 @@ module.exports = {
   careerMutations,
   userHasPreferenceMutations,
   userHasActivityMutations,
-  userHasCareerMutations
+  userHasCareerMutations,
 }

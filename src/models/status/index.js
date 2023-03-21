@@ -7,16 +7,16 @@ const Status = dbconfig.define(
     statusID: {
       type: DataTypes.UUID,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
     },
     statusCode: {
       type: DataTypes.STRING(30),
       allowNull: false,
-      unique: true
-    }
+      unique: true,
+    },
   },
   {
-    tableName: 'status'
+    tableName: 'status',
   }
 )
 module.exports = Status

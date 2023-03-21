@@ -7,27 +7,27 @@ const career = dbconfig.define(
     careerID: {
       type: DataTypes.UUID,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     description: {
       type: DataTypes.TEXT,
-      allowNull: true
+      allowNull: true,
     },
     matters: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: true,
     },
     duration: {
       type: DataTypes.INTEGER,
-      allowNull: true
-    }
+      allowNull: true,
+    },
   },
   {
-    tableName: 'career'
+    tableName: 'career',
   }
 )
 module.exports = career

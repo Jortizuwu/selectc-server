@@ -8,7 +8,7 @@ const {
   userHasPreferenceMutations,
   userHasActivityMutations,
   careerMutations,
-  userHasCareerMutations
+  userHasCareerMutations,
 } = require('./mutations')
 const { userQuerys, roleQuerys, careerQuerys } = require('./querys')
 
@@ -23,7 +23,7 @@ const resolvers = {
     getCareerById: (_, args) => careerQuerys.getCareerById(args),
 
     // role
-    getRoles: (_, __, context) => roleQuerys.getRoles(context)
+    getRoles: (_, __, context) => roleQuerys.getRoles(context),
   },
   Mutation: {
     // user
@@ -70,8 +70,8 @@ const resolvers = {
     // auth
     loginWhitEmailAndPassword: (_, args) =>
       authMutations.loginWhitEmailAndPassword(args),
-    loginWhitToken: (_, args) => authMutations.loginWhitToken(args)
-  }
+    loginWhitToken: (_, args) => authMutations.loginWhitToken(args),
+  },
 }
 
 module.exports = resolvers

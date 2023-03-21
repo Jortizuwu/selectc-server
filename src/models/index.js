@@ -11,67 +11,67 @@ const userHasActivityModel = require('./user_has_activity')
 // role user
 roleModel.hasMany(userModel, {
   foreignKey: {
-    name: 'roleID'
-  }
+    name: 'roleID',
+  },
 })
 userModel.belongsTo(roleModel, {
   foreignKey: {
-    name: 'roleID'
-  }
+    name: 'roleID',
+  },
 })
 
 // status user
 statusModel.hasMany(userModel, {
   foreignKey: {
-    name: 'statusID'
-  }
+    name: 'statusID',
+  },
 })
 userModel.belongsTo(statusModel, {
   foreignKey: {
-    name: 'statusID'
-  }
+    name: 'statusID',
+  },
 })
 
 // user has preferences
 userModel.belongsToMany(preferenceModel, {
   through: 'user_has_preference',
   foreignKey: {
-    name: 'uid'
-  }
+    name: 'uid',
+  },
 })
 preferenceModel.belongsToMany(userModel, {
   through: 'user_has_preference',
   foreignKey: {
-    name: 'preferenceID'
-  }
+    name: 'preferenceID',
+  },
 })
 
 // user has activity
 userModel.belongsToMany(activityModel, {
   through: userHasActivityModel,
   foreignKey: {
-    name: 'uid'
-  }
+    name: 'uid',
+  },
 })
 activityModel.belongsToMany(userModel, {
   through: userHasActivityModel,
   foreignKey: {
-    name: 'activityID'
-  }
+    name: 'activityID',
+  },
 })
 
 // user has career
 userModel.belongsToMany(careerModel, {
   through: userHasCareerModel,
   foreignKey: {
-    name: 'uid'
-  }
+    name: 'uid',
+  },
 })
 careerModel.belongsToMany(userModel, {
   through: userHasCareerModel,
   foreignKey: {
-    name: 'careerID'
-  }
+    name: 'careerID',
+  },
 })
 
 module.exports = {
@@ -83,5 +83,5 @@ module.exports = {
   careerModel,
   userHasPreferenceModel,
   userHasActivityModel,
-  userHasCareerModel
+  userHasCareerModel,
 }

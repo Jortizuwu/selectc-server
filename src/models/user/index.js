@@ -7,40 +7,40 @@ const User = dbconfig.define(
     uid: {
       type: DataTypes.UUID,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
     },
     name: {
       type: DataTypes.STRING(50),
-      allowNull: false
+      allowNull: false,
     },
     lastName: {
       type: DataTypes.STRING(50),
-      allowNull: false
+      allowNull: false,
     },
     email: {
       type: DataTypes.STRING(50),
       allowNull: false,
-      unique: true
+      unique: true,
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     age: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: true,
     },
     gender: {
       type: DataTypes.STRING(50),
-      allowNull: true
+      allowNull: true,
     },
     income: {
       type: DataTypes.INTEGER,
-      allowNull: true
-    }
+      allowNull: true,
+    },
   },
   {
-    tableName: 'user'
+    tableName: 'user',
   }
 )
 module.exports = User

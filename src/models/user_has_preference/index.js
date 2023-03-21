@@ -6,15 +6,15 @@ const userHasPreference = dbconfig.define(
   {
     uid: {
       type: DataTypes.UUID,
-      allowNull: false
+      allowNull: false,
     },
     preferenceID: {
       type: DataTypes.UUID,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   },
   {
-    tableName: 'user_has_preference'
+    tableName: 'user_has_preference',
   }
 )
 module.exports = userHasPreference

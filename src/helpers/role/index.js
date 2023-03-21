@@ -3,7 +3,7 @@ const { roleModel } = require('../../models')
 
 const findRoleByName = async (name) => {
   const value = await roleModel.findOne({
-    where: { name: name.toUpperCase() }
+    where: { name: name.toUpperCase() },
   })
 
   return value
@@ -15,14 +15,14 @@ const onlyAdmin = (user) => {
       extensions: {
         code: 'FORBIDDEN',
         http: {
-          status: 400
-        }
-      }
+          status: 400,
+        },
+      },
     })
   }
 }
 
 module.exports = {
   findRoleByName,
-  onlyAdmin
+  onlyAdmin,
 }

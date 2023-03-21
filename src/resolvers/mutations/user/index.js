@@ -9,7 +9,7 @@ const { generateJWT, validateLogin } = require('../../../helpers/auth')
 const {
   validatePassword,
   findUserById,
-  findUserByEmail
+  findUserByEmail,
 } = require('../../../helpers/user')
 const { findStatusByCode } = require('../../../helpers/status')
 
@@ -32,7 +32,7 @@ const userMutations = {
         uid: uuidv4(),
         roleID: role.roleID,
         password: hash,
-        statusID: status.statusID
+        statusID: status.statusID,
       })
 
       if (!user) {
@@ -40,9 +40,9 @@ const userMutations = {
           extensions: {
             code: 'server internal error',
             http: {
-              status: 500
-            }
-          }
+              status: 500,
+            },
+          },
         })
       }
 
@@ -54,7 +54,7 @@ const userMutations = {
         code: 200,
         success: true,
         message: 'user created',
-        token
+        token,
       }
     } catch (error) {
       return error
@@ -73,7 +73,7 @@ const userMutations = {
       await userModel.update(password ? { ...data, password } : data, {
         where: { uid: context.currentUser.uid },
         returning: true,
-        plain: true
+        plain: true,
       })
       const userUpdate = await findUserById(context.currentUser.uid)
       const token = generateJWT(userUpdate)
@@ -82,7 +82,7 @@ const userMutations = {
         success: true,
         user: userUpdate,
         token,
-        message: 'user update'
+        message: 'user update',
       }
     } catch (error) {
       return error
@@ -96,8 +96,8 @@ const userMutations = {
       if (!user) {
         throw new GraphQLError('user not found', {
           extensions: {
-            code: 401
-          }
+            code: 401,
+          },
         })
       }
 
@@ -106,7 +106,7 @@ const userMutations = {
       return {
         code: 200,
         success: true,
-        message: 'user delete'
+        message: 'user delete',
       }
     } catch (error) {
       return error
@@ -131,12 +131,12 @@ const userMutations = {
       return {
         code: 200,
         success: true,
-        message: 'user disabled'
+        message: 'user disabled',
       }
     } catch (error) {
       return error
     }
-  }
+  },
 }
 
 module.exports = userMutations

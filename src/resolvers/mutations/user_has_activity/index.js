@@ -9,29 +9,29 @@ const userHasActivityMutations = {
         await userHasActivityModel.create({
           uid: context.currentUser.uid,
           activityID,
-          userValue: val.userValue
+          userValue: val.userValue,
         })
       })
     )
     return {
       code: 200,
       success: true,
-      message: 'activities add to user'
+      message: 'activities add to user',
     }
   },
   deleteActivityToUser: async (context) => {
     await userHasActivityModel.destroy({
       where: {
-        uid: context.currentUser.uid
-      }
+        uid: context.currentUser.uid,
+      },
     })
 
     return {
       code: 200,
       success: true,
-      message: 'activities deletes user'
+      message: 'activities deletes user',
     }
-  }
+  },
 }
 
 module.exports = userHasActivityMutations

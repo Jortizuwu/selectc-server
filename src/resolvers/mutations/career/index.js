@@ -5,7 +5,7 @@ const careerMutations = {
   createCareer: async (data) => {
     const career = await careerModel.create({
       ...data,
-      careerID: uuidv4()
+      careerID: uuidv4(),
     })
 
     if (!career) throw new Error('opps!')
@@ -14,9 +14,9 @@ const careerMutations = {
       career,
       code: 200,
       success: true,
-      message: 'career created'
+      message: 'career created',
     }
-  }
+  },
 }
 
 module.exports = careerMutations

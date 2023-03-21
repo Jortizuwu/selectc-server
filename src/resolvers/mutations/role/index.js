@@ -11,9 +11,9 @@ const roleMutations = {
       role,
       code: 200,
       success: true,
-      message: 'role created '
+      message: 'role created ',
     }
-  }
+  },
 }
 
 module.exports = roleMutations

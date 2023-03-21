@@ -7,7 +7,7 @@ const dbconfig = new Sequelize(
   {
     port: parseInt(process.env.DB_PORT),
     host: process.env.DB_HOST,
-    dialect: 'mysql'
+    dialect: 'mysql',
   }
 )
 

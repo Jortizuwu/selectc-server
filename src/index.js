@@ -3,10 +3,10 @@ const { createServer } = require('http')
 const { ApolloServer } = require('@apollo/server')
 const {
   ApolloServerPluginLandingPageLocalDefault,
-  ApolloServerPluginLandingPageProductionDefault
+  ApolloServerPluginLandingPageProductionDefault,
 } = require('apollo-server-core')
 const {
-  ApolloServerPluginDrainHttpServer
+  ApolloServerPluginDrainHttpServer,
 } = require('@apollo/server/plugin/drainHttpServer')
 const { startStandaloneServer } = require('@apollo/server/standalone')
 const { makeExecutableSchema } = require('@graphql-tools/schema')
@@ -33,8 +33,8 @@ const server = new ApolloServer({
       ? ApolloServerPluginLandingPageProductionDefault({ footer: false })
       : ApolloServerPluginLandingPageLocalDefault({ footer: false }),
 
-    ApolloServerPluginDrainHttpServer({ httpServer })
-  ]
+    ApolloServerPluginDrainHttpServer({ httpServer }),
+  ],
 })
 
 ;(async () => {
@@ -43,7 +43,7 @@ const server = new ApolloServer({
       const token = req.headers.authorization.replace('Bearer ', '') || ''
       const currentUser = validateJWT(token)
       return { currentUser }
-    }
+    },
   })
 
   console.log(`🚀 Server listening at: ${url}`)

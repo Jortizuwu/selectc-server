@@ -14,9 +14,11 @@ const validateJWT = (token) => {
 }
 
 const generateJWT = (data) => {
+  // eslint-disable-next-line no-unused-vars
   const { Surveys, Preferences, Activities, password, ...rest } = data
+
   return jwt.sign(rest, PRIVATE_KEY, {
-    expiresIn: '7d'
+    expiresIn: '7d',
   })
 }
 
@@ -25,8 +27,8 @@ const validateLogin = (user) => {
     throw new GraphQLError('User is not authenticated', {
       extensions: {
         code: 'UNAUTHENTICATED',
-        http: { status: 400 }
-      }
+        http: { status: 400 },
+      },
     })
   }
 }

@@ -6,9 +6,9 @@ const careerQuerys = {
       const careers = await careerModel.findAll({
         include: [
           {
-            all: true
-          }
-        ]
+            all: true,
+          },
+        ],
       })
       return careers
     } catch (error) {
@@ -22,12 +22,12 @@ const careerQuerys = {
         career,
         code: 200,
         success: true,
-        message: 'careera find success'
+        message: 'careera find success',
       }
     } catch (error) {
       return error
     }
-  }
+  },
 }
 
 module.exports = careerQuerys
