@@ -11,16 +11,17 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest'
   },
-  // plugins: ['import'],
+  // "extends": ["prettier", "airbnb-base"],
+  // "plugins": ["prettier"],
   globals: {
     var1: 'writeable',
     Var2: 'readonly'
   },
   rules: {
-    'comma-dangle': 1,
+    // 'comma-dangle': 1,
     'Linebreak-style': 0,
     'no-unused-vars': 0,
     'max-len': 0
+    // 'prettier/prettier': 'error'
   }
-  // 'comma-dangle': ['error', 'always'],
 }
