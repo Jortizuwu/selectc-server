@@ -1,5 +1,6 @@
 const {
   roleMutations,
+  schoolMutations,
   userMutations,
   authMutations,
   statusMutations,
@@ -10,7 +11,12 @@ const {
   careerMutations,
   userHasCareerMutations,
 } = require('./mutations')
-const { userQuerys, roleQuerys, careerQuerys } = require('./querys')
+const {
+  userQuerys,
+  roleQuerys,
+  careerQuerys,
+  schoolQuerys,
+} = require('./querys')
 
 const resolvers = {
   Query: {
@@ -24,6 +30,8 @@ const resolvers = {
 
     // role
     getRoles: (_, __, context) => roleQuerys.getRoles(context),
+    // school
+    getSchools: (_, __, context) => schoolQuerys.getSchools(context),
   },
   Mutation: {
     // user
@@ -35,6 +43,10 @@ const resolvers = {
 
     // role
     createRole: (_, args, context) => roleMutations.createRole(args, context),
+
+    // school
+    createSchool: (_, args, context) =>
+      schoolMutations.createSchool(args, context),
 
     // status
     createStatus: (_, args, context) =>

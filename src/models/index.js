@@ -4,6 +4,7 @@ const statusModel = require('./status')
 const preferenceModel = require('./preference')
 const activityModel = require('./activity')
 const careerModel = require('./career')
+const schoolModel = require('./school')
 const userHasPreferenceModel = require('./user_has_preference')
 const userHasCareerModel = require('./user_has_career')
 const userHasActivityModel = require('./user_has_activity')
@@ -17,6 +18,18 @@ roleModel.hasMany(userModel, {
 userModel.belongsTo(roleModel, {
   foreignKey: {
     name: 'roleID',
+  },
+})
+
+// school user
+schoolModel.hasMany(userModel, {
+  foreignKey: {
+    name: 'schoolID',
+  },
+})
+userModel.belongsTo(schoolModel, {
+  foreignKey: {
+    name: 'schoolID',
   },
 })
 
@@ -81,6 +94,7 @@ module.exports = {
   preferenceModel,
   activityModel,
   careerModel,
+  schoolModel,
   userHasPreferenceModel,
   userHasActivityModel,
   userHasCareerModel,

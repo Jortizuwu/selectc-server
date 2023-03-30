@@ -5,6 +5,7 @@ const statusMutations = require('./status')
 const preferenceMutations = require('./preference')
 const activityMutations = require('./activity')
 const careerMutations = require('./career')
+const schoolMutations = require('./school')
 const userHasPreferenceMutations = require('./user_has_preference')
 const userHasActivityMutations = require('./user_has_activity')
 const userHasCareerMutations = require('./user_has_career')
@@ -17,6 +18,7 @@ module.exports = {
   preferenceMutations,
   activityMutations,
   careerMutations,
+  schoolMutations,
   userHasPreferenceMutations,
   userHasActivityMutations,
   userHasCareerMutations,

@@ -20,6 +20,7 @@ const typeDefs = gql`
     income: Int
     Status: Status
     Role: Role
+    School: School
     Preferences: [Preference]
     Activities: [Activity]
     Careers: [Career]
@@ -27,6 +28,13 @@ const typeDefs = gql`
 
   type Role {
     roleID: ID
+    name: String
+    createdAt: String
+    updatedAt: String
+  }
+
+  type School {
+    schoolID: ID
     name: String
     createdAt: String
     updatedAt: String
@@ -108,6 +116,13 @@ const typeDefs = gql`
     role: Role
   }
 
+  type SchoolResponse implements MutationResponse {
+    code: Int!
+    success: Boolean!
+    message: String
+    school: School
+  }
+
   type UserResponse implements MutationResponse {
     code: Int!
     success: Boolean!
@@ -156,6 +171,9 @@ const typeDefs = gql`
 
     # role
     getRoles: [Role]
+
+    # school
+    getSchools: [School]
   }
 
   # MUTATION
@@ -197,6 +215,9 @@ const typeDefs = gql`
 
     #career
     createCareer(name: String!, description: String): CareerResponse
+
+    #school
+    createSchool(name: String!): SchoolResponse
 
     #user has preference
     addPreferenceToUser(arrPreferences: [String]): PreferenceResponse
