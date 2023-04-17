@@ -3,7 +3,7 @@ const brain = require('brain.js')
 // Crea una nueva red neuronal
 const neuralNetwork = new brain.NeuralNetwork({
   learningRate: 0.01,
-  decayRate: 0.999,
+  decayRate: 0.999
 })
 
 const { findCareerByName } = require('../../../helpers/career')
@@ -29,9 +29,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 18,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
   },
   {
     input: {
@@ -48,9 +48,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Educacion Artistica': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
   },
   {
     input: {
@@ -69,9 +69,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 0,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Derecho: 1 },
+    output: { Derecho: 1 }
   },
   {
     input: {
@@ -91,9 +91,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { Física: 1 },
+    output: { Física: 1 }
   },
   {
     input: {
@@ -112,9 +112,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 0,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Tecnologia en Regencia y Farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
   },
   {
     input: {
@@ -132,9 +132,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Bacteriologia: 1 },
+    output: { Bacteriologia: 1 }
   },
   {
     input: {
@@ -151,9 +151,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Geografía: 1 },
+    output: { Geografía: 1 }
   },
   {
     input: {
@@ -172,9 +172,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -195,9 +195,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 0,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -216,9 +216,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -238,9 +238,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -261,9 +261,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -284,9 +284,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -304,9 +304,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -324,9 +324,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -345,9 +345,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -367,9 +367,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -386,9 +386,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -407,9 +407,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -428,9 +428,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -446,9 +446,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -465,9 +465,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -486,9 +486,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -507,9 +507,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -525,9 +525,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -543,9 +543,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -560,9 +560,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -578,9 +578,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 12,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -596,9 +596,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -614,9 +614,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -632,9 +632,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -649,9 +649,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -666,9 +666,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 12,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -685,9 +685,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -705,9 +705,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Química ': 1 },
+    output: { 'Química ': 1 }
   },
   {
     input: {
@@ -726,9 +726,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -747,9 +747,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -766,9 +766,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -786,9 +786,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -807,9 +807,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -828,9 +828,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -848,9 +848,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 2,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -869,9 +869,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -889,9 +889,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -909,9 +909,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Enfermería: 1 },
+    output: { Enfermería: 1 }
   },
   {
     input: {
@@ -930,9 +930,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -951,9 +951,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -972,9 +972,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -993,9 +993,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -1014,9 +1014,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -1035,9 +1035,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -1055,9 +1055,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -1076,9 +1076,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -1096,9 +1096,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Matemáticas: 1 },
+    output: { Matemáticas: 1 }
   },
   {
     input: {
@@ -1115,9 +1115,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1134,9 +1134,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1153,9 +1153,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1172,9 +1172,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1190,9 +1190,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1209,9 +1209,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1228,9 +1228,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1246,9 +1246,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1264,9 +1264,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Licenciatura en informática': 1 },
+    output: { 'Licenciatura en informática': 1 }
   },
   {
     input: {
@@ -1282,9 +1282,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1300,9 +1300,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1318,9 +1318,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1336,9 +1336,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1354,9 +1354,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1371,9 +1371,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1389,9 +1389,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1407,9 +1407,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1425,9 +1425,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Licenciatura en educación infantil': 1 },
+    output: { 'Licenciatura en educación infantil': 1 }
   },
   {
     input: {
@@ -1446,9 +1446,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1467,9 +1467,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1488,9 +1488,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1509,9 +1509,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1530,9 +1530,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1551,9 +1551,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 12,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1572,9 +1572,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1593,9 +1593,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1614,9 +1614,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Biología: 1 },
+    output: { Biología: 1 }
   },
   {
     input: {
@@ -1635,9 +1635,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1656,9 +1656,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1677,9 +1677,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1698,9 +1698,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1719,9 +1719,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1740,9 +1740,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1761,9 +1761,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 20,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1782,9 +1782,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 20,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1803,9 +1803,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 20,
       'Actividades Artísticas': 20,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
   },
   {
     input: {
@@ -1822,9 +1822,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1841,9 +1841,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1860,9 +1860,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1879,9 +1879,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1898,9 +1898,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1917,9 +1917,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1936,9 +1936,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1955,9 +1955,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1974,9 +1974,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
   },
   {
     input: {
@@ -1996,9 +1996,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -2018,9 +2018,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -2040,9 +2040,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -2062,9 +2062,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -2084,9 +2084,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -2106,9 +2106,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 14,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -2128,9 +2128,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 14,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -2150,9 +2150,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 20,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
   },
   {
     input: {
@@ -2171,9 +2171,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2192,9 +2192,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2213,9 +2213,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2234,9 +2234,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2255,9 +2255,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2276,9 +2276,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2297,9 +2297,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 20,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2318,9 +2318,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2339,9 +2339,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Licenciatura en Ciencias Sociales': 1 },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
   },
   {
     input: {
@@ -2359,9 +2359,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2379,9 +2379,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2399,9 +2399,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2419,9 +2419,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 12,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2439,9 +2439,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2459,9 +2459,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2479,9 +2479,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2499,9 +2499,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2519,9 +2519,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
   },
   {
     input: {
@@ -2539,9 +2539,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2559,9 +2559,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2579,9 +2579,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2599,9 +2599,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2619,9 +2619,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2639,9 +2639,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2659,9 +2659,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2679,9 +2679,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2699,9 +2699,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería Mecánica': 1 },
+    output: { 'Ingeniería Mecánica': 1 }
   },
   {
     input: {
@@ -2722,9 +2722,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2745,9 +2745,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2768,9 +2768,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 18,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2791,9 +2791,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 18,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2814,9 +2814,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2837,9 +2837,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2860,9 +2860,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2883,9 +2883,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 20,
-      'Ingeniería e Informática': 16,
+      'Ingeniería e Informática': 16
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2906,9 +2906,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 20,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería Industrial': 1 },
+    output: { 'Ingeniería Industrial': 1 }
   },
   {
     input: {
@@ -2929,9 +2929,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -2952,9 +2952,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -2975,9 +2975,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -2998,9 +2998,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -3021,9 +3021,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -3044,9 +3044,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -3067,9 +3067,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -3090,9 +3090,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 18,
+      'Ingeniería e Informática': 18
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -3113,9 +3113,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 20,
+      'Ingeniería e Informática': 20
     },
-    output: { 'Ingeniería de Sistemas': 1 },
+    output: { 'Ingeniería de Sistemas': 1 }
   },
   {
     input: {
@@ -3135,9 +3135,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3157,9 +3157,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3179,9 +3179,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3201,9 +3201,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3223,9 +3223,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 16,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3245,9 +3245,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3267,9 +3267,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 6,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3289,9 +3289,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3311,9 +3311,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Administración en Salud': 1 },
+    output: { 'Administración en Salud': 1 }
   },
   {
     input: {
@@ -3332,9 +3332,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3353,9 +3353,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3374,9 +3374,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3395,9 +3395,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 16,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 10,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3416,9 +3416,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3437,9 +3437,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3458,9 +3458,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 20,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3479,9 +3479,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 20,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3500,9 +3500,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 20,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 8,
+      'Ingeniería e Informática': 8
     },
-    output: { Estadística: 1 },
+    output: { Estadística: 1 }
   },
   {
     input: {
@@ -3523,9 +3523,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 0,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3546,9 +3546,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 0,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3569,9 +3569,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 0,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3592,9 +3592,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3615,9 +3615,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3638,9 +3638,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3661,9 +3661,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3684,9 +3684,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3707,9 +3707,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { 'Ingeniería Ambiental': 1 },
+    output: { 'Ingeniería Ambiental': 1 }
   },
   {
     input: {
@@ -3728,9 +3728,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3749,9 +3749,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3770,9 +3770,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3791,9 +3791,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3812,9 +3812,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3833,9 +3833,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3854,9 +3854,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 6,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3875,9 +3875,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3896,9 +3896,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 10,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Ingeniería Agronómica': 1 },
+    output: { 'Ingeniería Agronómica': 1 }
   },
   {
     input: {
@@ -3915,9 +3915,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Geografía: 1 },
+    output: { Geografía: 1 }
   },
   {
     input: {
@@ -3934,9 +3934,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Geografía: 1 },
+    output: { Geografía: 1 }
   },
   {
     input: {
@@ -3953,9 +3953,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Geografía: 1 },
+    output: { Geografía: 1 }
   },
   {
     input: {
@@ -3972,9 +3972,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Geografía: 1 },
+    output: { Geografía: 1 }
   },
   {
     input: {
@@ -3991,9 +3991,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 18,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Geografía: 1 },
+    output: { Geografía: 1 }
   },
   {
     input: {
@@ -4011,9 +4011,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Bacteriologia: 1 },
+    output: { Bacteriologia: 1 }
   },
   {
     input: {
@@ -4031,9 +4031,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Bacteriologia: 1 },
+    output: { Bacteriologia: 1 }
   },
   {
     input: {
@@ -4051,9 +4051,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Bacteriologia: 1 },
+    output: { Bacteriologia: 1 }
   },
   {
     input: {
@@ -4071,9 +4071,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Bacteriologia: 1 },
+    output: { Bacteriologia: 1 }
   },
   {
     input: {
@@ -4091,9 +4091,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 2,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Bacteriologia: 1 },
+    output: { Bacteriologia: 1 }
   },
   {
     input: {
@@ -4112,9 +4112,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 0,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Tecnologia en Regencia y Farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
   },
   {
     input: {
@@ -4133,9 +4133,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 0,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Tecnologia en Regencia y Farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
   },
   {
     input: {
@@ -4154,9 +4154,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Tecnologia en Regencia y Farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
   },
   {
     input: {
@@ -4175,9 +4175,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 10,
+      'Ingeniería e Informática': 10
     },
-    output: { 'Tecnologia en Regencia y Farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
   },
   {
     input: {
@@ -4196,9 +4196,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 4,
       'Actividades Artísticas': 2,
       'Profesiones Administrativas y Contables': 14,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { 'Tecnologia en Regencia y Farmacia': 1 },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
   },
   {
     input: {
@@ -4218,9 +4218,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { Física: 1 },
+    output: { Física: 1 }
   },
   {
     input: {
@@ -4240,9 +4240,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { Física: 1 },
+    output: { Física: 1 }
   },
   {
     input: {
@@ -4262,9 +4262,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 14,
+      'Ingeniería e Informática': 14
     },
-    output: { Física: 1 },
+    output: { Física: 1 }
   },
   {
     input: {
@@ -4284,9 +4284,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { Física: 1 },
+    output: { Física: 1 }
   },
   {
     input: {
@@ -4306,9 +4306,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 12,
-      'Ingeniería e Informática': 12,
+      'Ingeniería e Informática': 12
     },
-    output: { Física: 1 },
+    output: { Física: 1 }
   },
   {
     input: {
@@ -4327,9 +4327,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 0,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Derecho: 1 },
+    output: { Derecho: 1 }
   },
   {
     input: {
@@ -4348,9 +4348,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 0,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Derecho: 1 },
+    output: { Derecho: 1 }
   },
   {
     input: {
@@ -4369,9 +4369,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 0,
       'Actividades Artísticas': 4,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Derecho: 1 },
+    output: { Derecho: 1 }
   },
   {
     input: {
@@ -4390,9 +4390,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 0,
       'Actividades Artísticas': 6,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 2,
+      'Ingeniería e Informática': 2
     },
-    output: { Derecho: 1 },
+    output: { Derecho: 1 }
   },
   {
     input: {
@@ -4411,9 +4411,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 2,
       'Actividades Artísticas': 8,
       'Profesiones Administrativas y Contables': 8,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { Derecho: 1 },
+    output: { Derecho: 1 }
   },
   {
     input: {
@@ -4430,9 +4430,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Educacion Artistica': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
   },
   {
     input: {
@@ -4449,9 +4449,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 20,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Educacion Artistica': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
   },
   {
     input: {
@@ -4468,9 +4468,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 10,
       'Actividades Artísticas': 20,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Educacion Artistica': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
   },
   {
     input: {
@@ -4487,9 +4487,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 8,
       'Actividades Artísticas': 20,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Licenciatura en Educacion Artistica': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
   },
   {
     input: {
@@ -4506,9 +4506,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 16,
       'Profesiones Administrativas y Contables': 4,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Licenciatura en Educacion Artistica': 1 },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
   },
   {
     input: {
@@ -4529,9 +4529,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 18,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
   },
   {
     input: {
@@ -4552,9 +4552,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 18,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
   },
   {
     input: {
@@ -4575,9 +4575,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 18,
-      'Ingeniería e Informática': 6,
+      'Ingeniería e Informática': 6
     },
-    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
   },
   {
     input: {
@@ -4598,9 +4598,9 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 20,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
   },
   {
     input: {
@@ -4621,17 +4621,13862 @@ const data = [
       'Profesiones Humanísticas y Sociales': 12,
       'Actividades Artísticas': 18,
       'Profesiones Administrativas y Contables': 20,
-      'Ingeniería e Informática': 4,
+      'Ingeniería e Informática': 4
     },
-    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
   },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      negocios: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      electronica: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 2
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      naturaleza: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 2
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 2,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 16
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 10,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      'Defensa y Seguridad': 10,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      electronica: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 12
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 2,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      negocios: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      electronica: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 2
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      naturaleza: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 2
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 2,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 16
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 10,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      'Defensa y Seguridad': 10,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      electronica: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 12
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 2,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      negocios: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      electronica: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Química ': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 2
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      naturaleza: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 2
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 2,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 4
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Enfermería: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 16
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { Matemáticas: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 10,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      'Defensa y Seguridad': 10,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Licenciatura en informática': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      monotonia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura en educación infantil': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      electronica: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { Biología: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura Educacion Fisica, Recreacio y Deporte': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      control: 1,
+      musica: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Literatura y Lengua Castellana': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 14,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 14,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      musica: 1,
+      teatro: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Lengua Extrangera con Enfasis en Ingles': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Licenciatura en Ciencias Sociales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 2
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 12,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en ciencias naturales y educación ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      mecánica: 1,
+      monotonia: 1,
+      electronica: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Mecánica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 16
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      mecánica: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería Industrial': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 2,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 18
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      oficina: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 20
+    },
+    output: { 'Ingeniería de Sistemas': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 16,
+      'Ingeniería e Informática': 8
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 6,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administración en Salud': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 8,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 16,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 10,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 10
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 12
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 20,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 8
+    },
+    output: { Estadística: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 14
+    },
+    output: { 'Ingeniería Ambiental': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 6,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 20,
+      'Medicina y Ciencias de la Salud': 14,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 10,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Ingeniería Agronómica': 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 6,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      enseñanza: 1,
+      'aire libre': 1,
+      naturaleza: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 14,
+      'Medicina y Ciencias de la Salud': 8,
+      'Profesiones Humanísticas y Sociales': 18,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 2
+    },
+    output: { Geografía: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 16,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 0,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 2
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 20,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 2,
+      'Ingeniería e Informática': 4
+    },
+    output: { Bacteriologia: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 12,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 0,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 10
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      naturaleza: 1,
+      oficina: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      ciencia: 1,
+      administracion: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 10,
+      'Medicina y Ciencias de la Salud': 18,
+      'Profesiones Humanísticas y Sociales': 4,
+      'Actividades Artísticas': 2,
+      'Profesiones Administrativas y Contables': 14,
+      'Ingeniería e Informática': 12
+    },
+    output: { 'Tecnologia en Regencia y Farmacia': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 16,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 14
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      oficina: 1,
+      economía: 1,
+      control: 1,
+      comunicacion: 1,
+      monotonia: 1,
+      negocios: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 18,
+      'Medicina y Ciencias de la Salud': 6,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 12,
+      'Ingeniería e Informática': 12
+    },
+    output: { Física: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 6,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 4,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 20,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 0,
+      'Actividades Artísticas': 6,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 2
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      monotonia: 1,
+      'aire libre': 1,
+      control: 1,
+      comunicacion: 1,
+      administracion: 1,
+      colaborador: 1,
+      economía: 1,
+      'Defensa y Seguridad': 18,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 8,
+      'Medicina y Ciencias de la Salud': 2,
+      'Profesiones Humanísticas y Sociales': 2,
+      'Actividades Artísticas': 8,
+      'Profesiones Administrativas y Contables': 8,
+      'Ingeniería e Informática': 4
+    },
+    output: { Derecho: 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 10,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 2,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 8,
+      'Actividades Artísticas': 20,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      'aire libre': 1,
+      oficina: 1,
+      economía: 1,
+      musica: 1,
+      comunicacion: 1,
+      ciencia: 1,
+      colaborador: 1,
+      'Defensa y Seguridad': 4,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 4,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 16,
+      'Profesiones Administrativas y Contables': 4,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Licenciatura en Educacion Artistica': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 12,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 16,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  },
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 12,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 20,
+      'Ingeniería e Informática': 4
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  }
 ]
 
 neuralNetwork.train(data, {
   errorThresh: 0.005, // umbral de error
   iterations: 20000, // número de iteraciones
   log: true, // mostrar información de entrenamiento
-  logPeriod: 10, // mostrar información cada 100 iteraciones
+  logPeriod: 10 // mostrar información cada 100 iteraciones
 })
 
 const userHasCareerMutations = {
@@ -4652,30 +18497,30 @@ const userHasCareerMutations = {
         await userHasCareerModel.create({
           uid: context.currentUser.uid,
           careerID,
-          coincidenceValue: val[1],
+          coincidenceValue: val[1]
         })
       })
     )
     return {
       code: 200,
       success: true,
-      message: 'career add to user',
+      message: 'career add to user'
     }
   },
 
   deleteCareerToUser: async (context) => {
     await userHasCareerModel.destroy({
       where: {
-        uid: context.currentUser.uid,
-      },
+        uid: context.currentUser.uid
+      }
     })
 
     return {
       code: 200,
       success: true,
-      message: 'careers deletes user',
+      message: 'careers deletes user'
     }
-  },
+  }
 }
 
 module.exports = userHasCareerMutations
