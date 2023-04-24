@@ -185,6 +185,7 @@ const typeDefs = gql`
       email: String!
       password: String!
       RoleName: AllRoles!
+      schoolID: ID!
     ): UserResponse
 
     updateUser(

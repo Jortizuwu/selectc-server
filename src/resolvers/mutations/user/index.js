@@ -9,9 +9,10 @@ const { generateJWT, validateLogin } = require('../../../helpers/auth')
 const {
   validatePassword,
   findUserById,
-  findUserByEmail,
+  findUserByEmail
 } = require('../../../helpers/user')
 const { findStatusByCode } = require('../../../helpers/status')
+const { findSchoolByID } = require('../../../helpers/school')
 
 const userMutations = {
   createUser: async (data) => {
@@ -23,6 +24,12 @@ const userMutations = {
       if (!status?.statusID) {
         throw new UserInputError('opps!! the status code is`n valid!')
       }
+
+      const school = await findSchoolByID(data.schoolID)
+      if (!school?.schoolID) {
+        throw new UserInputError('opps!! the schoolID code is`n valid!')
+      }
+
       await findUserByEmail(data.email)
 
       const hash = bcrypt.hashSync(data.password, bcrypt.genSaltSync(10))
@@ -33,6 +40,7 @@ const userMutations = {
         roleID: role.roleID,
         password: hash,
         statusID: status.statusID,
+        schoolID: school.schoolID
       })
 
       if (!user) {
@@ -40,9 +48,9 @@ const userMutations = {
           extensions: {
             code: 'server internal error',
             http: {
-              status: 500,
-            },
-          },
+              status: 500
+            }
+          }
         })
       }
 
@@ -54,7 +62,7 @@ const userMutations = {
         code: 200,
         success: true,
         message: 'user created',
-        token,
+        token
       }
     } catch (error) {
       return error
@@ -73,7 +81,7 @@ const userMutations = {
       await userModel.update(password ? { ...data, password } : data, {
         where: { uid: context.currentUser.uid },
         returning: true,
-        plain: true,
+        plain: true
       })
       const userUpdate = await findUserById(context.currentUser.uid)
       const token = generateJWT(userUpdate)
@@ -82,7 +90,7 @@ const userMutations = {
         success: true,
         user: userUpdate,
         token,
-        message: 'user update',
+        message: 'user update'
       }
     } catch (error) {
       return error
@@ -96,8 +104,8 @@ const userMutations = {
       if (!user) {
         throw new GraphQLError('user not found', {
           extensions: {
-            code: 401,
-          },
+            code: 401
+          }
         })
       }
 
@@ -106,7 +114,7 @@ const userMutations = {
       return {
         code: 200,
         success: true,
-        message: 'user delete',
+        message: 'user delete'
       }
     } catch (error) {
       return error
@@ -131,12 +139,12 @@ const userMutations = {
       return {
         code: 200,
         success: true,
-        message: 'user disabled',
+        message: 'user disabled'
       }
     } catch (error) {
       return error
     }
-  },
+  }
 }
 
 module.exports = userMutations
