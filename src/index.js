@@ -1,12 +1,18 @@
 const express = require('express')
 const { createServer } = require('http')
 const { ApolloServer } = require('@apollo/server')
+
+const {
+  startServerAndCreateLambdaHandler,
+  handlers
+} = require('@as-integrations/aws-lambda')
+
 const {
   ApolloServerPluginLandingPageLocalDefault,
-  ApolloServerPluginLandingPageProductionDefault,
+  ApolloServerPluginLandingPageProductionDefault
 } = require('apollo-server-core')
 const {
-  ApolloServerPluginDrainHttpServer,
+  ApolloServerPluginDrainHttpServer
 } = require('@apollo/server/plugin/drainHttpServer')
 const { startStandaloneServer } = require('@apollo/server/standalone')
 const { makeExecutableSchema } = require('@graphql-tools/schema')
@@ -33,18 +39,33 @@ const server = new ApolloServer({
       ? ApolloServerPluginLandingPageProductionDefault({ footer: false })
       : ApolloServerPluginLandingPageLocalDefault({ footer: false }),
 
-    ApolloServerPluginDrainHttpServer({ httpServer }),
-  ],
+    ApolloServerPluginDrainHttpServer({ httpServer })
+  ]
 })
 
-;(async () => {
-  const { url } = await startStandaloneServer(server, {
+const graphqlHandler = startServerAndCreateLambdaHandler(
+  server,
+  {
     context: async ({ req }) => {
       const token = req.headers.authorization.replace('Bearer ', '') || ''
       const currentUser = validateJWT(token)
       return { currentUser }
-    },
-  })
+    }
+  },
+  // We will be using the Proxy V2 handler
+  handlers.createAPIGatewayProxyEventV2RequestHandler()
+)
 
-  console.log(`🚀 Server listening at: ${url}`)
-})()
+module.exports = { graphqlHandler }
+
+// ;(async () => {
+//   const { url } = await startStandaloneServer(server, {
+//     context: async ({ req }) => {
+//       const token = req.headers.authorization.replace('Bearer ', '') || ''
+//       const currentUser = validateJWT(token)
+//       return { currentUser }
+//     }
+//   })
+
+//   console.log(`🚀 Server listening at: ${url}`)
+// })()
