@@ -1,11 +1,11 @@
 const path = require('path')
-// const brain = require('brain.js')
+const brain = require('brain.js')
 
 // Crea una nueva red neuronal
-// const neuralNetwork = new brain.NeuralNetwork({
-//   learningRate: 0.01,
-//   decayRate: 0.999
-// })
+const neuralNetwork = new brain.NeuralNetwork({
+  learningRate: 0.01,
+  decayRate: 0.999
+})
 
 const { findCareerByName } = require('../../../helpers/career')
 const { userHasCareerModel } = require('../../../models')
@@ -18473,12 +18473,12 @@ const data = [
   }
 ]
 
-// neuralNetwork.train(data, {
-//   errorThresh: 0.005, // umbral de error
-//   iterations: 20000, // número de iteraciones
-//   log: true, // mostrar información de entrenamiento
-//   logPeriod: 10 // mostrar información cada 100 iteraciones
-// })
+neuralNetwork.train(data, {
+  errorThresh: 0.005, // umbral de error
+  iterations: 20000, // número de iteraciones
+  log: true, // mostrar información de entrenamiento
+  logPeriod: 10 // mostrar información cada 100 iteraciones
+})
 
 const userHasCareerMutations = {
   addCareerToUser: async (args, context) => {
@@ -18489,10 +18489,10 @@ const userHasCareerMutations = {
     args.data.forEach((element) => {
       userData[element.name] = element.value
     })
-    // const prediction = neuralNetwork.run(userData)
+    const prediction = neuralNetwork.run(userData)
 
-    // const uwu = Object.entries(prediction)
-    const uwu = []
+    const uwu = Object.entries(prediction)
+    // const uwu = []
     console.log({ uwu })
     await Promise.all(
       uwu.map(async (val) => {
