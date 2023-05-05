@@ -45,15 +45,14 @@ const server = new ApolloServer({
 
 const graphqlHandler = startServerAndCreateLambdaHandler(
   server,
-  {
-    context: async ({ req }) => {
-      const token = req.headers.authorization.replace('Bearer ', '') || ''
-      const currentUser = validateJWT(token)
-      return { currentUser }
-    }
-  },
-  // We will be using the Proxy V2 handler
   handlers.createAPIGatewayProxyEventV2RequestHandler()
+  // {
+  //   context: async ({ context, event }) => {
+  //     const token = event.headers.authorization.replace('Bearer ', '') || ''
+  //     const currentUser = validateJWT(token)
+  //     return { currentUser }
+  //   }
+  // }
 )
 
 module.exports = { graphqlHandler }
@@ -66,6 +65,5 @@ module.exports = { graphqlHandler }
 //       return { currentUser }
 //     }
 //   })
-
 //   console.log(`🚀 Server listening at: ${url}`)
 // })()

@@ -122,3 +122,12 @@
 
 //   console.log(`🚀 Server listening at: ${url}`)
 // })()
+
+// const path = require('path')
+// const libX11 = require('../lib/libX11.so.6');
+// const libX11 = require(path.join('./', 'lib', 'libX11.so.6'))
+// const libX11xcb = require(path.join('./', 'lib', 'libX11-xcb.so.1.0.0'))
+// console.log(libX11)
+
+const libX11 = require(process.env.LD_LIBRARY_PATH + '/libX11.so.6')
+console.log(libX11)
