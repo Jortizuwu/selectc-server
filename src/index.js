@@ -35,13 +35,21 @@ const server = new ApolloServer({
       : ApolloServerPluginLandingPageLocalDefault({ footer: false }),
 
     ApolloServerPluginDrainHttpServer({ httpServer })
-  ]
+  ],
+  context: ({ req }) => {
+    return {
+      headers: {
+        'content-type': 'application/json',
+        'apollo-require-preflight': true
+      }
+    }
+  }
 })
 
 ;(async () => {
   const { url } = await startStandaloneServer(server, {
     context: async ({ req }) => {
-      const token = req.headers.authorization.replace('Bearer ', '') || ''
+      const token = req.headers.authorization?.replace('Bearer ', '') || ''
       const currentUser = validateJWT(token)
       return { currentUser }
     }

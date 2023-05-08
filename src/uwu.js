@@ -122,3 +122,8 @@
 
 //   console.log(`🚀 Server listening at: ${url}`)
 // })()
+
+// const fs = require('fs')
+
+// const data = fs.readFileSync('./src/db/DigiCertGlobalRootCA.crt.pem')
+// console.log(data)

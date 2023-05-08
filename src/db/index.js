@@ -1,3 +1,4 @@
+const fs = require('fs')
 const { Sequelize } = require('sequelize')
 
 const dbconfig = new Sequelize(
@@ -8,6 +9,10 @@ const dbconfig = new Sequelize(
     port: parseInt(process.env.DB_PORT),
     host: process.env.DB_HOST,
     dialect: 'mysql',
+    dialectOptions: {
+      ssl: { ca: fs.readFileSync('src/db/DigiCertGlobalRootCA.crt.pem') }
+    },
+    ssl: true
   }
 )
 
