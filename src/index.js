@@ -40,7 +40,9 @@ const server = new ApolloServer({
     return {
       headers: {
         'content-type': 'application/json',
-        'apollo-require-preflight': true
+        'apollo-require-preflight': true,
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST,PATCH,OPTIONS'
       }
     }
   }
