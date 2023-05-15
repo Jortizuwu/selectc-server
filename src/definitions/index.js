@@ -21,6 +21,7 @@ const typeDefs = gql`
     Status: Status
     Role: Role
     School: School
+    preferenceCareer: String
     Preferences: [Preference]
     Activities: [Activity]
     Careers: [Career]
@@ -195,6 +196,7 @@ const typeDefs = gql`
       age: Int
       gender: String
       income: Int
+      preferenceCareer: String
       oldPassword: String
       newPassword: String
     ): UserResponse
