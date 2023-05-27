@@ -90,6 +90,11 @@ const typeDefs = gql`
     updatedAt: String
   }
 
+  type SuccessfulPreferences {
+    correct: Int
+    unsuccessful: Int
+  }
+
   input ArrActivities {
     name: String
     userValue: Int
@@ -160,6 +165,20 @@ const typeDefs = gql`
     career: Career
   }
 
+  type SuccessfulPreferencesResponse implements MutationResponse {
+    code: Int!
+    success: Boolean!
+    message: String
+    data: SuccessfulPreferences
+  }
+
+  type MostFrequentCareersResponse implements MutationResponse {
+    code: Int!
+    success: Boolean!
+    message: String
+    data: String
+  }
+
   # QUERY
   type Query {
     # user
@@ -175,6 +194,10 @@ const typeDefs = gql`
 
     # school
     getSchools: [School]
+    getSuccessfulPreferences: SuccessfulPreferencesResponse
+    getSuccessfulPreferencesForFaculties: SuccessfulPreferencesResponse
+    getMostFrequentCareers: MostFrequentCareersResponse
+    getMostFrequentFaculties: MostFrequentCareersResponse
   }
 
   # MUTATION

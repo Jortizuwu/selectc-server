@@ -9,13 +9,14 @@ const {
   userHasPreferenceMutations,
   userHasActivityMutations,
   careerMutations,
-  userHasCareerMutations,
+  userHasCareerMutations
 } = require('./mutations')
 const {
   userQuerys,
   roleQuerys,
   careerQuerys,
   schoolQuerys,
+  analityQuerys
 } = require('./querys')
 
 const resolvers = {
@@ -32,6 +33,14 @@ const resolvers = {
     getRoles: (_, __, context) => roleQuerys.getRoles(context),
     // school
     getSchools: (_, __, context) => schoolQuerys.getSchools(context),
+    getSuccessfulPreferences: (_, __, context) =>
+      analityQuerys.getSuccessfulPreferences(context),
+    getSuccessfulPreferencesForFaculties: (_, __, context) =>
+      analityQuerys.getSuccessfulPreferencesForFaculties(context),
+    getMostFrequentCareers: (_, __, context) =>
+      analityQuerys.getMostFrequentCareers(context),
+    getMostFrequentFaculties: (_, __, context) =>
+      analityQuerys.getMostFrequentFaculties(context)
   },
   Mutation: {
     // user
@@ -82,8 +91,8 @@ const resolvers = {
     // auth
     loginWhitEmailAndPassword: (_, args) =>
       authMutations.loginWhitEmailAndPassword(args),
-    loginWhitToken: (_, args) => authMutations.loginWhitToken(args),
-  },
+    loginWhitToken: (_, args) => authMutations.loginWhitToken(args)
+  }
 }
 
 module.exports = resolvers

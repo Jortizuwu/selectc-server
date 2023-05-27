@@ -10,7 +10,7 @@ const neuralNetwork = new brain.NeuralNetwork({
 const { findCareerByName } = require('../../../helpers/career')
 const { userHasCareerModel } = require('../../../models')
 
-const data = [
+const dataPro = [
   {
     input: {
       analisis: 1,
@@ -18473,7 +18473,34 @@ const data = [
   }
 ]
 
-neuralNetwork.train(data, {
+const dataDev = [
+  {
+    input: {
+      analisis: 1,
+      enseñanza: 1,
+      construccion: 1,
+      naturaleza: 1,
+      control: 1,
+      teatro: 1,
+      mecánica: 1,
+      monotonia: 1,
+      negocios: 1,
+      electronica: 1,
+      administracion: 1,
+      'Defensa y Seguridad': 14,
+      'Ciencias Puras, Agrarias, Medio Ambientales': 4,
+      'Medicina y Ciencias de la Salud': 10,
+      'Profesiones Humanísticas y Sociales': 12,
+      'Actividades Artísticas': 18,
+      'Profesiones Administrativas y Contables': 18,
+      'Ingeniería e Informática': 6
+    },
+    output: { 'Administracion en Finanzas y Negocios Internacionales': 1 }
+  }
+]
+
+// neuralNetwork.train(process.env.NODE_ENV === 'prod' ? dataPro : dataDev, {
+neuralNetwork.train(dataDev, {
   errorThresh: 0.005, // umbral de error
   iterations: 20000, // número de iteraciones
   log: true, // mostrar información de entrenamiento

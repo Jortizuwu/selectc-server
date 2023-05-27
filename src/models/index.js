@@ -5,6 +5,7 @@ const preferenceModel = require('./preference')
 const activityModel = require('./activity')
 const careerModel = require('./career')
 const schoolModel = require('./school')
+const facultyModel = require('./faculty')
 const userHasPreferenceModel = require('./user_has_preference')
 const userHasCareerModel = require('./user_has_career')
 const userHasActivityModel = require('./user_has_activity')
@@ -12,79 +13,93 @@ const userHasActivityModel = require('./user_has_activity')
 // role user
 roleModel.hasMany(userModel, {
   foreignKey: {
-    name: 'roleID',
-  },
+    name: 'roleID'
+  }
 })
 userModel.belongsTo(roleModel, {
   foreignKey: {
-    name: 'roleID',
-  },
+    name: 'roleID'
+  }
+})
+
+// career faculty
+facultyModel.hasMany(careerModel, {
+  foreignKey: {
+    name: 'facultyID'
+  }
+})
+
+careerModel.belongsTo(facultyModel, {
+  foreignKey: {
+    name: 'facultyID'
+  }
 })
 
 // school user
 schoolModel.hasMany(userModel, {
   foreignKey: {
-    name: 'schoolID',
-  },
+    name: 'schoolID'
+  }
 })
 userModel.belongsTo(schoolModel, {
   foreignKey: {
-    name: 'schoolID',
-  },
+    name: 'schoolID'
+  }
 })
 
 // status user
 statusModel.hasMany(userModel, {
   foreignKey: {
-    name: 'statusID',
-  },
+    name: 'statusID'
+  }
 })
 userModel.belongsTo(statusModel, {
   foreignKey: {
-    name: 'statusID',
-  },
+    name: 'statusID'
+  }
 })
 
 // user has preferences
 userModel.belongsToMany(preferenceModel, {
   through: 'user_has_preference',
   foreignKey: {
-    name: 'uid',
-  },
+    name: 'uid'
+  }
 })
 preferenceModel.belongsToMany(userModel, {
   through: 'user_has_preference',
   foreignKey: {
-    name: 'preferenceID',
-  },
+    name: 'preferenceID'
+  }
 })
 
 // user has activity
 userModel.belongsToMany(activityModel, {
   through: userHasActivityModel,
   foreignKey: {
-    name: 'uid',
-  },
+    name: 'uid'
+  }
 })
 activityModel.belongsToMany(userModel, {
   through: userHasActivityModel,
   foreignKey: {
-    name: 'activityID',
-  },
+    name: 'activityID'
+  }
 })
 
 // user has career
 userModel.belongsToMany(careerModel, {
   through: userHasCareerModel,
   foreignKey: {
-    name: 'uid',
-  },
+    name: 'uid'
+  }
 })
+
 careerModel.belongsToMany(userModel, {
   through: userHasCareerModel,
   foreignKey: {
-    name: 'careerID',
-  },
+    name: 'careerID'
+  }
 })
 
 module.exports = {
@@ -98,4 +113,5 @@ module.exports = {
   userHasPreferenceModel,
   userHasActivityModel,
   userHasCareerModel,
+  facultyModel
 }
