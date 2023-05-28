@@ -10,13 +10,10 @@ const dbconfig = new Sequelize(
     host: process.env.DB_HOST,
     dialect: 'mysql',
 
-    dialectOptions:
-      process.env.NODE_ENV === 'prod'
-        ? {
+    dialectOptions: {
             ssl: { ca: fs.readFileSync('src/db/DigiCertGlobalRootCA.crt.pem') }
-          }
-        : undefined,
-    ssl: process.env.NODE_ENV === 'prod' ? true : false
+          },
+    ssl: true 
   }
 )
 
