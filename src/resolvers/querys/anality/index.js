@@ -11,7 +11,8 @@ const analityQuerys = {
       const usersData = await userModel.findAll({
         include: [
           {
-            all: true
+            model: careerModel,
+            attributes: ['name', 'description', 'careerID']
           }
         ]
       })
@@ -58,7 +59,8 @@ const analityQuerys = {
       const usersData = await userModel.findAll({
         include: [
           {
-            all: true
+            model: careerModel,
+            attributes: ['name', 'description', 'careerID']
           }
         ]
       })
@@ -110,7 +112,8 @@ const analityQuerys = {
       const usersData = await userModel.findAll({
         include: [
           {
-            all: true
+            model: careerModel,
+            attributes: ['name', 'description', 'careerID']
           }
         ]
       })
@@ -147,11 +150,9 @@ const analityQuerys = {
       const usersData = await userModel.findAll({
         include: [
           {
-            all: true
-          },
-          {
             model: careerModel,
-            include: [{ model: facultyModel }]
+            attributes: ['name', 'description', 'careerID'],
+            include: [{ model: facultyModel, attributes: ['name'] }]
           }
         ]
       })
