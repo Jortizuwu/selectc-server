@@ -29,8 +29,8 @@ const analityQuerys = {
         const careers = user?.dataValues?.Careers || []
         careers.sort(
           (a, b) =>
-            (a?.user_has_career?.coincidenceValue || 0) -
-            (b?.user_has_career?.coincidenceValue || 0)
+            (b?.user_has_career?.coincidenceValue || 0) -
+            (a?.user_has_career?.coincidenceValue || 0)
         )
 
         if (careers.length > 0) {
@@ -60,7 +60,13 @@ const analityQuerys = {
         include: [
           {
             model: careerModel,
-            attributes: ['name', 'description', 'careerID']
+            attributes: ['name', 'description', 'careerID'],
+            include: [
+              {
+                model: facultyModel,
+                attributes: ['facultyID']
+              }
+            ]
           }
         ]
       })
@@ -77,8 +83,8 @@ const analityQuerys = {
         const careers = user?.dataValues?.Careers || []
         careers.sort(
           (a, b) =>
-            (a?.user_has_career?.coincidenceValue || 0) -
-            (b?.user_has_career?.coincidenceValue || 0)
+            (b?.user_has_career?.coincidenceValue || 0) -
+            (a?.user_has_career?.coincidenceValue || 0)
         )
 
         if (careers.length > 0) {
@@ -87,7 +93,7 @@ const analityQuerys = {
 
           if (
             preferredCareer !== null &&
-            topCareer?.dataValues?.facultyID ===
+            topCareer?.dataValues?.Faculty?.dataValues?.facultyID ===
               preferredCareer?.dataValues?.facultyID
           ) {
             correctCount++
@@ -123,8 +129,8 @@ const analityQuerys = {
         const careers = user?.dataValues?.Careers || []
         careers.sort(
           (a, b) =>
-            (a?.user_has_career?.coincidenceValue || 0) -
-            (b?.user_has_career?.coincidenceValue || 0)
+            (b?.user_has_career?.coincidenceValue || 0) -
+            (a?.user_has_career?.coincidenceValue || 0)
         )
 
         if (careers.length > 0) {
@@ -162,8 +168,8 @@ const analityQuerys = {
         const careers = user?.dataValues?.Careers || []
         careers.sort(
           (a, b) =>
-            (a?.user_has_career?.coincidenceValue || 0) -
-            (b?.user_has_career?.coincidenceValue || 0)
+            (b?.user_has_career?.coincidenceValue || 0) -
+            (a?.user_has_career?.coincidenceValue || 0)
         )
 
         if (careers.length > 0) {

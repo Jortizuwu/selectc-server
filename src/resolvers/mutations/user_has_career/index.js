@@ -18500,7 +18500,7 @@ const dataDev = [
 ]
 
 // neuralNetwork.train(process.env.NODE_ENV === 'prod' ? dataPro : dataDev, {
-neuralNetwork.train(dataPro, {
+neuralNetwork.train(dataDev, {
   errorThresh: 0.005, // umbral de error
   iterations: 20000, // número de iteraciones
   log: true, // mostrar información de entrenamiento
